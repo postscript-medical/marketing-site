@@ -1,0 +1,23 @@
+{
+  "name": "postscript-medical",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Obscura-Limited/postscript-medical.git"
+  },
+  "keywords": [],
+  "author": "Pedro Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Obscura-Limited/postscript-medical/issues"
+  },
+  "homepage": "https://github.com/Obscura-Limited/postscript-medical#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
