@@ -1,23 +1,29 @@
 {
-  "name": "postscript-medical",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "start": "npx eleventy --serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Obscura-Limited/postscript-medical.git"
-  },
-  "keywords": [],
-  "author": "Pedro Tavares",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Obscura-Limited/postscript-medical/issues"
-  },
-  "homepage": "https://github.com/Obscura-Limited/postscript-medical#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
-  }
+    "name": "postscript-medical",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".eleventy.js",
+    "scripts": {
+        "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+        "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Obscura-Limited/postscript-medical.git"
+    },
+    "keywords": [],
+    "author": "Pedro Tavares",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Obscura-Limited/postscript-medical/issues"
+    },
+    "homepage": "https://github.com/Obscura-Limited/postscript-medical#readme",
+    "dependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "concurrently": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-sass": "^4.1.0",
+        "sass": "^1.32.8"
+    }
 }

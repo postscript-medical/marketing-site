@@ -1,0 +1,51 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section class="intro">
+        <h1>{{ heading }}</h1>
+
+        <p>{{ subHeading }}</p>
+
+        <article>
+            <h2>
+                Communication made easy
+            </h2>
+
+            <p>
+                Overcoming obstacles to communication such as language barriers, hearing impairments and learning difficulties with individualised illustrations.
+            </p>
+
+            <a href="/research.html">
+                Read the research
+            </a>
+        </article>
+
+        <article>
+            <h2>
+                Improving the efficiency of consultations
+            </h2>
+
+            <p>
+                Intuitive, simple tools to make explanations and patiens communication simpler, faster.
+            </p>
+        </article>
+
+        <article>
+            <h2>
+                Multi-device access
+            </h2>
+
+            <p>
+                High performance on your clinic room desktop and on the move with your tablet or smartphone.
+            </p>
+        </article>
+    </section>
+
+    {% include "partials/section-effectiveness.html" %}
+
+    {% include "partials/section-testimonials.html" %}
+
+    {% include "partials/section-contributors.html" %}
+
+    {% include "partials/section-hospitals.html" %}
+{% endblock %}
