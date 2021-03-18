@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
+    
+    <link rel='icon' type='image/png' href='images/favicon.png'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>{% include "css/critical.css" %}</style>
 
     {# Add facility for pages to delare an array of critical styles #} 
@@ -19,7 +23,6 @@
         {% endfor %}
     {% endif %}
 
-    <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" />
     {# Add facility for pages to declare an array of stylesheet paths #}
     {% if pageStylesheets %}
         {% for item in pageStylesheets %}

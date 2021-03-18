@@ -1,1 +1,24 @@
+@import '_config';
 @import 'reset';
+html {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    font-size: $size_800;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: $size_700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: $size_600;
+    line-height: 1.25;
+}
+
+p {
+    font-size: $size_400;
+}
