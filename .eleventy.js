@@ -5,6 +5,14 @@ module.exports = config => {
     // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
     config.setUseGitIgnore(false);
 
+    // Returns a list of research key findindgs ordered by filename
+    config.addCollection('keyFindings', collection => {
+        return collection.getFilteredByGlob('./src/content/research/key-findings/*.md').sort((a, b) => {
+            return Number(a.fileSlug) > Number(b.fileSlug) ? 1 : -1;
+        });
+    });
+
+
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',

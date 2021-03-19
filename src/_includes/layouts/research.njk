@@ -1,0 +1,89 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="intro">
+    <h1>{{ heading }}</h1>
+
+    <p>{{ subHeading }}</p>
+
+    <article>
+      <h2>
+        Unanimous positive feedback
+      </h2>
+
+      <figure>
+        <p>
+          100%
+        </p>
+
+        <figcaption>
+          Specialists that would use PostScript in routine clinical practice
+        </figcaption>
+      </figure>
+    </article>
+
+    <ul>
+      {% for finding in collections.keyFindings %}
+        <li>
+          <figure>
+            <p>
+              {{ finding.data.percentage }}%
+            </p>
+
+            <figcaption>
+              {{ finding.data.summary }}
+            </figcaption>
+          </figure>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <article>
+      <h2>
+        Improved communication
+      </h2>
+
+      <figure>
+        <p>
+          83%
+        </p>
+
+        <figcaption>
+          Specialists that reported enhanced patient communication.
+        </figcaption>
+      </figure>
+    </article>
+
+    <ul>
+      {% for finding in collections.keyFindings %}
+        <li>
+          <figure>
+            <p>
+              {{ finding.data.percentage }}%
+            </p>
+
+            <figcaption>
+              {{ finding.data.summary }}
+            </figcaption>
+          </figure>
+        <li>
+      {% endfor %}
+    </ul>
+
+    <article>
+      <h2>
+        Time well spent
+      </h2>
+
+      <figure>
+        <p>
+          72%
+        </p>
+
+        <figcaption>
+          Specialists that reported more effective and efficient use of clinical time with PostScript.
+        </figcaption>
+      </figure>
+    </article>
+  </section>
+{% endblock %}
