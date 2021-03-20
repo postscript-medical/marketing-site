@@ -1,0 +1,8 @@
+@import '_config';
+.stack-horizontal {
+    display: flex;
+}
+
+.stack-horizontal> :not(:last-child) {
+    margin-right: $size_400;
+}

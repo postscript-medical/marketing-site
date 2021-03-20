@@ -1,0 +1,35 @@
+footer {
+    background-color: $color_dark;
+    color: $color_light;
+    padding: $size_700 $size_400 $size_800;
+}
+
+footer a {
+    color: $color_light;
+}
+
+footer input[type=email] {
+    width: 60%;
+    max-width: 252px;
+}
+
+ul.footer__list--primary {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer__list--primary>* {
+    min-width: 20ch;
+    flex-grow: 1;
+}
+
+.footer__list--primary> :not(:last-child),
+.footer__item> :not(:last-child) {
+    margin-bottom: $size_500;
+}
+
+.footer__item p {
+    font-weight: 800;
+}

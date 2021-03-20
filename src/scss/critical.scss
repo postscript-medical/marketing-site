@@ -22,3 +22,21 @@ h3 {
 p {
     font-size: $size_400;
 }
+
+button.secondary {
+    background-color: $color_light;
+    border: none;
+    color: $color_dark;
+    padding: $size_200 $size_300;
+    text-transform: lowercase;
+}
+
+input[type=email].secondary {
+    background-color: transparent;
+    border: 1px solid $color_secondary;
+    color: $color_secondary;
+    padding: $size_200 $size_300;
+}
+
+@import '_layouts';
+@import '_footer';
