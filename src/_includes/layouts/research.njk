@@ -22,21 +22,8 @@
       </figure>
     </article>
 
-    <ul>
-      {% for finding in collections.keyFindings %}
-        <li>
-          <figure>
-            <p>
-              {{ finding.data.percentage }}%
-            </p>
-
-            <figcaption>
-              {{ finding.data.summary }}
-            </figcaption>
-          </figure>
-        </li>
-      {% endfor %}
-    </ul>
+    {% set groupContent = collections.keyFindings %}
+    {% include "partials/key-findings-group.njk" %}
 
     <article>
       <h2>
@@ -54,21 +41,8 @@
       </figure>
     </article>
 
-    <ul>
-      {% for finding in collections.keyFindings %}
-        <li>
-          <figure>
-            <p>
-              {{ finding.data.percentage }}%
-            </p>
-
-            <figcaption>
-              {{ finding.data.summary }}
-            </figcaption>
-          </figure>
-        </li>
-      {% endfor %}
-    </ul>
+    {% set groupContent = collections.keyFindings %}
+    {% include "partials/key-findings-group.njk" %}
 
     <article>
       <h2>

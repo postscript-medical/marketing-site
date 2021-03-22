@@ -1,4 +1,10 @@
 @import '_config';
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($min_width, 1fr));
+    grid-gap: $size_400;
+}
+
 .stack-horizontal {
     display: flex;
 }

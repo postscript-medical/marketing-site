@@ -4,6 +4,10 @@ html {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+main {
+    padding: $size_400;
+}
+
 h1 {
     font-size: $size_800;
     line-height: 1.1;
@@ -36,6 +40,33 @@ input[type=email].secondary {
     border: 1px solid $color_secondary;
     color: $color_secondary;
     padding: $size_200 $size_300;
+}
+
+ul.key-findings-group {
+    text-align: center;
+    max-width: calc(60ch + 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.percentage-ring {
+    fill: $color_primary;
+    width: $min_width;
+    height: $min_width;
+}
+
+.percentage-ring text {
+    fill: $color_dark;
+    font-weight: 900;
+    font-size: $size_500;
+}
+
+.percentage-ring path {
+    opacity: 0.5;
+}
+
+.percentage-ring circle {
+    stroke: $color_primary;
 }
 
 @import '_layouts';
