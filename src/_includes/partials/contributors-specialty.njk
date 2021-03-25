@@ -1,0 +1,20 @@
+{% set header = contributorsHeader %}
+{% set subheader = contributorsSubHeader %}
+{% set contributors = contributorsContent %}
+
+<h2>
+  {{ header }}
+</h2>
+
+<p>
+  {{ subheader }}
+</p>
+
+<ul class="contributor-avatars">
+  {% for contributor in contributors %}
+    <li>
+      {% set avatarContent = contributor.data %}
+      {% include "partials/contributor-avatar.njk" %}
+    </li>
+  {% endfor %}
+</ul>

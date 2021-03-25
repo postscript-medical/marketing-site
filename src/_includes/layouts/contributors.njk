@@ -1,0 +1,36 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section>
+        <h1>{{ heading }}</h1>
+
+        <p>{{ subHeading }}</p>
+    </section>
+
+    {% set contributorsHeader = "Cardiology" %}
+    {% set contributorsSubHeader = "Maecenas sagittis, lacus ac euismod tincidunt, nibh." %}
+    {% set contributorsContent = collections.contributorsCardiology %}
+    {% include "partials/contributors-specialty.njk" %}
+
+    {% set contributorsHeader = "Dermatology" %}
+    {% set contributorsSubHeader = "Maecenas sagittis, lacus ac euismod tincidunt, nibh." %}
+    {% set contributorsContent = collections.contributorsDermatology %}
+    {% include "partials/contributors-specialty.njk" %}
+
+    {% set contributorsHeader = "Gatroenterology" %}
+    {% set contributorsSubHeader = "Maecenas sagittis, lacus ac euismod tincidunt, nibh." %}
+    {% set contributorsContent = collections.contributorsGastroenterology %}
+    {% include "partials/contributors-specialty.njk" %}
+
+    {% set contributorsHeader = "Oncology" %}
+    {% set contributorsSubHeader = "Maecenas sagittis, lacus ac euismod tincidunt, nibh." %}
+    {% set contributorsContent = collections.contributorsOncology %}
+    {% include "partials/contributors-specialty.njk" %}
+
+    {% set contributorsHeader = "Surgery" %}
+    {% set contributorsSubHeader = "Maecenas sagittis, lacus ac euismod tincidunt, nibh." %}
+    {% set contributorsContent = collections.contributorsSurgery %}
+    {% include "partials/contributors-specialty.njk" %}
+
+    {% include "partials/section-hospitals.html" %}
+{% endblock %}

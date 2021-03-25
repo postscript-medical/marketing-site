@@ -1,0 +1,19 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    <section>
+        <h1>
+            {{ heading }}
+        </h1>
+
+        <p>
+            {{ subHeading }}
+        </p>
+
+        <p>
+            Co-founders Rajan and Graeme embarked upon a journey to bring high quality digital illustrations, which can be annotated and individualised, to every patient they see.
+        </p>
+    </section>
+
+    {% include "partials/section-hospitals.html" %}
+{% endblock %}
