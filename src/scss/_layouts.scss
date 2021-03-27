@@ -1,14 +1,28 @@
 @import '_config';
 .auto-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($min_width, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($width_min, 1fr));
     grid-gap: $size_400;
 }
 
-.stack-horizontal {
+.stacker {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stacker> :not(:last-child) {
+    margin-bottom: $size_400;
+}
+
+.stacker.stacker--large> :not(:last-child) {
+    margin-bottom: $size_700;
+}
+
+.stacker--horizontal {
     display: flex;
 }
 
-.stack-horizontal> :not(:last-child) {
+.stacker--horizontal> :not(:last-child) {
     margin-right: $size_400;
 }

@@ -1,0 +1,13 @@
+{% set card = hospitalCardContent %}
+
+<article class="hospital-card">
+    {% include "partials/avatar-default.svg" %}
+
+    <h3 class="hospital-card__heading">
+        {{ card.name }}
+    </h3>
+
+    <p>
+        {{ card.summary }}
+    </p>
+</article>

@@ -25,6 +25,7 @@ h3 {
 
 p {
     font-size: $size_400;
+    max-width: 60ch;
 }
 
 button.secondary {
@@ -51,8 +52,8 @@ ul.key-findings-group {
 
 .percentage-ring {
     fill: $color_primary;
-    width: $min_width;
-    height: $min_width;
+    width: $width_min;
+    height: $width_min;
 }
 
 .percentage-ring text {

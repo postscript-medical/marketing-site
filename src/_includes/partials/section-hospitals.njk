@@ -1,0 +1,38 @@
+<section class="hospitals stacker stacker--large">
+    <header class="stacker">
+        <h2>
+            Hospitals
+        </h2>
+
+        <p>
+            Maecenas sagittis, lacus ac euismod tincidunt, nibh.
+        </p>
+    </header>
+
+    <ul class="horizontal-gallery">
+        {% for hospital in collections.hospitalsPrimary %}
+            <li>
+                {% set hospitalCardContent = hospital.data %}
+                {% include "partials/hospital-card.njk" %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <ul class="horizontal-gallery">
+        <li>
+            {% include "partials/hospital-card--compact.njk" %}
+        </li>
+
+        <li>
+            {% include "partials/hospital-card--compact.njk" %}
+        </li>
+
+        <li>
+            {% include "partials/hospital-card--compact.njk" %}
+        </li>
+
+        <li>
+            {% include "partials/hospital-card--compact.njk" %}
+        </li>
+    </ul>
+</section>

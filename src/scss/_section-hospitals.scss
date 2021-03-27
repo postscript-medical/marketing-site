@@ -4,4 +4,63 @@
     margin-left: -$size_400;
     margin-right: -$size_400;
     margin-bottom: -$size_400;
+    padding: $size_700 $size_400 $size_800;
+}
+
+.hospitals header {
+    text-align: center;
+}
+
+.horizontal-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    max-width: $width_max;
+}
+
+.horizontal-gallery>* {
+    padding: $size_400;
+    max-width: $width_half;
+}
+
+.hospital-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hospital-card> :not(:last-child) {
+    margin-bottom: $size_400;
+}
+
+.hospital-card__heading {
+    font-size: $size_400;
+}
+
+.hospital-card--compact {
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    .hospital-card {
+        align-items: start;
+        display: grid;
+        grid-template-columns: 10rem 1fr;
+        grid-template-rows: min-content 1fr;
+        gap: $size_200 0;
+        padding: $size_400;
+        text-align: left;
+    }
+    .hospital-card> :not(:last-child) {
+        margin-bottom: 0;
+    }
+    .hospital-card svg {
+        width: 10rem;
+        height: 10rem;
+        grid-column-start: 1;
+        grid-row: 1 / -1;
+        margin: -$size_400 0 -$size_400;
+    }
 }

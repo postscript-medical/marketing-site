@@ -10,6 +10,9 @@ module.exports = config => {
     // Returns a list of research key findindgs ordered by filename
     config.addCollection('keyFindings', collection => getCollectionByDisplayOrder(collection, './src/content/research/key-findings/*.md'));
 
+    // Primary hospitals
+    config.addCollection('hospitalsPrimary', collection => getCollectionByDisplayOrder(collection, './src/content/hospitals/*.md'));
+
     // Contributors
     config.addCollection('contributorsCardiology', collection => getCollectionByDisplayOrder(collection, './src/content/contributors/cardiology/*.md'));
     config.addCollection('contributorsDermatology', collection => getCollectionByDisplayOrder(collection, './src/content/contributors/dermatology/*.md'));

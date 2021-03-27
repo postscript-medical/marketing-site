@@ -16,12 +16,12 @@ footer input[type=email] {
 ul.footer__list--primary {
     display: flex;
     flex-wrap: wrap;
-    max-width: $max_width;
+    max-width: $width_max;
     margin: auto;
 }
 
 .footer__list--primary>* {
-    min-width: $min_width;
+    min-width: $width_min;
 }
 
 .footer__list--primary> :not(:last-child) {
