@@ -8,24 +8,58 @@ main {
     padding: $size_400;
 }
 
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1 {
     font-size: $size_800;
     line-height: 1.1;
+    max-width: 19ch;
 }
 
 h2 {
     font-size: $size_700;
     line-height: 1.2;
+    max-width: 25ch;
 }
 
 h3 {
     font-size: $size_600;
     line-height: 1.25;
+    max-width: 33ch;
 }
 
 p {
     font-size: $size_400;
+}
+
+p,
+ul,
+ol {
     max-width: 60ch;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+td,
+th {
+    padding: $size_200;
 }
 
 button.secondary {
