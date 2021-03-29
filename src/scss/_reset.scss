@@ -9,14 +9,6 @@
 }
 
 
-/* Remove default padding */
-
-ul[class],
-ol[class] {
-    padding: 0;
-}
-
-
 /* Remove default margin */
 
 body,
@@ -50,11 +42,17 @@ body {
     line-height: 1.5;
 }
 
+ul,
+ol {
+    margin: 0;
+}
+
 
 /* Remove list styles on ul, ol elements with a class attribute */
 
 ul[class],
 ol[class] {
+    padding: 0;
     list-style: none;
 }
 

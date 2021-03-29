@@ -5,7 +5,13 @@ html {
 }
 
 main {
-    padding: $size_400;
+    padding: $size_400 $size_400 ($size_900);
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+    margin-top: $size_600;
 }
 
 h1,
@@ -43,12 +49,13 @@ p {
 p,
 ul,
 ol {
-    max-width: 60ch;
+    max-width: $width_paragraph;
 }
 
 table {
     margin: auto;
     border-collapse: collapse;
+    max-width: $width_paragraph;
 }
 
 table,
@@ -79,7 +86,7 @@ input[type=email].secondary {
 
 ul.key-findings-group {
     text-align: center;
-    max-width: calc(60ch + 2rem);
+    max-width: calc($width_paragraph + 2rem);
     margin-left: auto;
     margin-right: auto;
 }

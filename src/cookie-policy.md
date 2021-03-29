@@ -11,7 +11,7 @@ A cookie is a small file which is stored on your device. The cookie helps analyz
 You can choose to accept or decline cookies, and the most effective way to do this is through the settings on your web browser. 
 
 If you disable or decline cookies, you may not be able to access some parts of the website, and some features may not function properly or be available to you.  
-Some of the cookies that a user of our website may find on its browser (depending on settings) after navigating to our website are as set out below. Additional cookies may be added, and we may update or remove the cookies below from time to time.  Some of the cookies we use on our website are placed by third parties on our behalf, such as Google Analytics (see www.google.com/policies/privacy/partners/ for more information).
+Some of the cookies that a user of our website may find on its browser (depending on settings) after navigating to our website are as set out below. Additional cookies may be added, and we may update or remove the cookies below from time to time.  Some of the cookies we use on our website are placed by third parties on our behalf, such as Google Analytics (see [www.google.com/policies/privacy/partners/](www.google.com/policies/privacy/partners/) for more information).
 
 ## Categories of cookies
 

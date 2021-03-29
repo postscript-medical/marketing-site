@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.stacker>* {
+    width: 100%;
+}
+
 .stacker> :not(:last-child) {
     margin-bottom: $size_400;
 }

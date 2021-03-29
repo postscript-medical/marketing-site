@@ -65,7 +65,7 @@ We share your personal details:
 
 ## Giving and withdrawing your consent, and updating your personal information
 
-Where your consent is required for us to process your personal information, we will ask for your consent at the point at which you provide your data.  You have the right to withdraw that consent at any time. You can also update your personal information at any time. If you wish to do either, contact us at [insert email address]
+Where your consent is required for us to process your personal information, we will ask for your consent at the point at which you provide your data.  You have the right to withdraw that consent at any time. You can also update your personal information at any time. If you wish to do either, contact us at [admin@postscriptmedical.com](mailto:admin@postscriptmedical.com)
 
 ## Storing your personal information
 
@@ -85,4 +85,4 @@ You have the right to request access to and rectification or erasure of personal
 
 The data controller for our websites, products and services is PostScript Medical Ltd of 18 The Broadway East Lane, Wembley, Middlesex, England, HA9 8JU.
 
-You can contact us by email at [insert email address] in relation to any of the rights described in this privacy policy, or if you have any questions regarding this privacy policy. 
+You can contact us by email at [admin@postscriptmedical.com](mailto:admin@postscriptmedical.com) in relation to any of the rights described in this privacy policy, or if you have any questions regarding this privacy policy. 
