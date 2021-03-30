@@ -4,8 +4,18 @@ html {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+main,
+header {
+    max-width: $width_max;
+    margin: 0 auto;
+}
+
 main {
-    padding: $size_400 $size_400 ($size_900);
+    padding: $size_400 $size_400 $size_900;
+}
+
+header {
+    padding: 0 $size_400;
 }
 
 h1:not(:first-child),
@@ -17,7 +27,10 @@ h3:not(:first-child) {
 h1 {
     font-size: $size_800;
     line-height: 1.1;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 19ch;
+    text-align: center;
 }
 
 h2 {
@@ -34,11 +47,6 @@ h3 {
 
 p {
     font-size: $size_400;
-}
-
-p,
-ul,
-ol {
     max-width: $width_paragraph;
 }
 
@@ -74,9 +82,14 @@ input[type=email].secondary {
     padding: $size_200 $size_300;
 }
 
+.page__sub-heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 ul.key-findings-group {
     text-align: center;
-    // max-width: calc($width_paragraph + 2rem);
 }
 
 .percentage-ring {

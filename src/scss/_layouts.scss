@@ -5,10 +5,11 @@
     grid-gap: $size_400;
 }
 
-.stacker {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.full-bleed {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .stacker> :not(:last-child) {
@@ -19,10 +20,16 @@
     margin-bottom: $size_700;
 }
 
-.stacker--horizontal {
+.width--max {
+    max-width: $width_max;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
     display: flex;
 }
 
-.stacker--horizontal> :not(:last-child) {
+.wrapper> :not(:last-child) {
     margin-right: $size_400;
 }
