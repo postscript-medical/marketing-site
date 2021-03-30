@@ -1,13 +1,5 @@
 {% extends "layouts/base.njk" %}
 
-{% set customClass = "stacker" %}
-
 {% block content %}
-  <h1>{{ heading }}</h1>
-
-  {% if subHeading %}
-    <p>{{ subHeading }}</p>
-  {% endif %}
-
   {{ content | safe }}
 {% endblock %}

@@ -35,7 +35,13 @@
 
     {% include "partials/site-head.html" %}
 
-    <main tabindex="-1" id="main-content" class="{{ customClass }}">
+    <main tabindex="-1" id="main-content" class="stacker">
+        <h1>{{ heading }}</h1>
+
+        {% if subHeading %}
+            <p>{{ subHeading }}</p>
+        {% endif %}
+
         {% block content %}{% endblock %}
     </main>
 

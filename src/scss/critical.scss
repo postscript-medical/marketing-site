@@ -14,16 +14,6 @@ h3:not(:first-child) {
     margin-top: $size_600;
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
-ol {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 h1 {
     font-size: $size_800;
     line-height: 1.1;
@@ -86,9 +76,7 @@ input[type=email].secondary {
 
 ul.key-findings-group {
     text-align: center;
-    max-width: calc($width_paragraph + 2rem);
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: calc($width_paragraph + 2rem);
 }
 
 .percentage-ring {
