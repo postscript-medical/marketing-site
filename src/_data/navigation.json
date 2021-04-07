@@ -1,0 +1,19 @@
+{
+    "items": [{
+            "text": "Research",
+            "url": "/research/"
+        },
+        {
+            "text": "Contributors",
+            "url": "/contributors/"
+        },
+        {
+            "text": "Pricing",
+            "url": "/pricing/"
+        },
+        {
+            "text": "About us",
+            "url": "/about-us/"
+        }
+    ]
+}

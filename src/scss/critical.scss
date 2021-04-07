@@ -2,6 +2,7 @@
 @import 'reset';
 html {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: $color_dark;
 }
 
 main,
@@ -12,10 +13,6 @@ header {
 
 main {
     padding: $size_400 $size_400 $size_900;
-}
-
-header {
-    padding: 0 $size_400;
 }
 
 h1:not(:first-child),
@@ -67,6 +64,27 @@ th {
     padding: $size_200;
 }
 
+a:link {
+    color: $color_dark;
+}
+
+a[data-state="active"],
+a[data-state="active"]:visited {
+    color: $color_primary;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color_darkish;
+}
+
+a.cta {
+    color: $color_light;
+    background-color: $color_primary;
+    border-radius: 1.5em;
+    padding: $size_300 $size_500;
+}
+
 button.secondary {
     background-color: $color_light;
     border: none;
@@ -113,5 +131,6 @@ ul.key-findings-group {
 }
 
 @import '_layouts';
+@import '_header';
 @import '_section-hospitals';
 @import '_footer';

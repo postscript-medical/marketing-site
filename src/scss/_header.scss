@@ -1,0 +1,55 @@
+@import '_config';
+.site-head__brand {
+    display: inline-block;
+}
+
+.site-head__nav {
+    margin: auto;
+}
+
+.mobile-decoration {
+    padding: $size_200 $size_400;
+    background-color: $color_light;
+    box-shadow: 0 0 $size_200 rgba(0, 0, 0, 0.15);
+}
+
+.postscript-logo {
+    width: 16vw;
+    height: 14vw;
+    max-width: 161px;
+    max-height: 136px;
+    margin: $size_100;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.nav__list a {
+    display: inline-block;
+}
+
+.links--application {
+    align-items: baseline;
+    text-transform: uppercase;
+    padding: $size_200 $size_400;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:$break_one) {
+    .site-head {
+        align-items: center;
+        display: flex;
+        padding: $size_400;
+    }
+    .mobile-decoration {
+        align-items: center;
+        background-color: transparent;
+        box-shadow: none;
+        display: flex;
+        padding: 0;
+        flex-grow: 1;
+    }
+}
