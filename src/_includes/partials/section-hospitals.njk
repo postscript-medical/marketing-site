@@ -1,38 +1,14 @@
 <section class="hospitals stacker--large full-bleed">
     <header class="stacker">
         <h2>
-            Hospitals
+            PostScript is supported by
         </h2>
-
-        <p>
-            Maecenas sagittis, lacus ac euismod tincidunt, nibh.
-        </p>
     </header>
 
     <ul class="horizontal-gallery">
-        {% for hospital in collections.hospitalsPrimary %}
-            <li>
-                {% set hospitalCardContent = hospital.data %}
-                {% include "partials/hospital-card.njk" %}
-            </li>
+        {% for supporter in supporters %}
+            {% set hospitalCardContent = supporter %}
+            {% include "partials/hospital-card--compact.njk" %}
         {% endfor %}
-    </ul>
-
-    <ul class="horizontal-gallery">
-        <li>
-            {% include "partials/hospital-card--compact.njk" %}
-        </li>
-
-        <li>
-            {% include "partials/hospital-card--compact.njk" %}
-        </li>
-
-        <li>
-            {% include "partials/hospital-card--compact.njk" %}
-        </li>
-
-        <li>
-            {% include "partials/hospital-card--compact.njk" %}
-        </li>
     </ul>
 </section>

@@ -1,7 +1,12 @@
+{% set cardContent = hospitalCardContent %}
 <figure class="hospital-card--compact">
-    {% include "partials/avatar-default.svg" %}
+    {% if hospitalCardContent.logo %}
+        {{ hospitalCardContent.logo }}
+    {% else %}
+        {% include "partials/avatar-default.svg" %}
+    {% endif %}
 
     <figcaption>
-        Hospital name 1
+        {{ hospitalCardContent.name }}
     </figcaption>
 </figure>
