@@ -1,9 +1,9 @@
 {% set group = groupContent %}
 
-<ul class="key-findings-group auto-grid">
+<ul class="key-findings-group horizontal-gallery">
     {% for entry in group %}
     <li>
-        <figure>
+        <figure class="stacker">
             <svg class="percentage-ring" viewBox="0 0 100 100" width="100" height="100">
                 <text x="52.5%" y="57.5%" text-anchor="middle">
                     {{ entry.percentage }}%

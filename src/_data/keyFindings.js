@@ -1,4 +1,5 @@
 const keyFindings = [{
+        heading: 'Improved communication',
         percentage: 83,
         summary: 'Patitent communication was enhanced'
     },
@@ -11,6 +12,7 @@ const keyFindings = [{
         summary: 'Explaining complex terminology was made easier'
     },
     {
+        heading: 'Time well spent',
         percentage: 72,
         summary: 'Use of time during consultation was more efficient'
     },
@@ -35,6 +37,7 @@ const keyFindings = [{
         summary: 'Improves adherence to medications'
     },
     {
+        heading: 'Unanimous positive feedback',
         percentage: 100,
         summary: 'Would use our illustrative Guide in routine practice'
     },
@@ -47,7 +50,7 @@ module.exports = {
         keyFindings[2]
     ],
     researchPage1: [
-        keyFindings[3],
+        keyFindings[2],
         keyFindings[4],
         keyFindings[5],
     ],
@@ -55,5 +58,8 @@ module.exports = {
         keyFindings[6],
         keyFindings[7],
         keyFindings[8]
-    ]
+    ],
+    cardContent1: keyFindings[9],
+    cardContent2: keyFindings[0],
+    cardContent3: keyFindings[3],
 }

@@ -1,60 +1,24 @@
 {% extends "layouts/base.njk" %}
 
+{# {% set pageCriticalStyles = ['css/research.css'] %} #}
+
+
 {% block content %}
-  <section class="intro">
-    <article>
-      <h2>
-        Unanimous positive feedback
-      </h2>
-
-      <figure>
-        <p>
-          100%
-        </p>
-
-        <figcaption>
-          Specialists that would use PostScript in routine clinical practice
-        </figcaption>
-      </figure>
-    </article>
+  <section class="intro stacker--x-large">
+    {% set researchFindingsCardContent = keyFindings.cardContent1 %}
+    {% include "partials/research-findings-card.njk" %}
 
     {% set groupContent = keyFindings.researchPage1 %}
     {% include "partials/key-findings-group.njk" %}
 
-    <article>
-      <h2>
-        Improved communication
-      </h2>
-
-      <figure>
-        <p>
-          83%
-        </p>
-
-        <figcaption>
-          Specialists that reported enhanced patient communication.
-        </figcaption>
-      </figure>
-    </article>
+    {% set researchFindingsCardContent = keyFindings.cardContent2 %}
+    {% include "partials/research-findings-card.njk" %}
 
     {% set groupContent = keyFindings.researchPage2 %}
     {% include "partials/key-findings-group.njk" %}
 
-    <article>
-      <h2>
-        Time well spent
-      </h2>
-
-      <figure>
-        <p>
-          72%
-        </p>
-
-        <figcaption>
-          Specialists that reported more effective and efficient use of clinical time with PostScript.
-        </figcaption>
-      </figure>
-    </article>
+    {% set researchFindingsCardContent = keyFindings.cardContent3 %}
+    {% include "partials/research-findings-card.njk" %}
   </section>
 
   {% include "partials/section-hospitals.njk" %}

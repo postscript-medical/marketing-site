@@ -16,8 +16,12 @@
     margin-bottom: $size_400;
 }
 
-.stacker.stacker--large> :not(:last-child) {
+.stacker--large> :not(:last-child) {
     margin-bottom: $size_700;
+}
+
+.stacker--x-large> :not(:last-child) {
+    margin-bottom: $size_900;
 }
 
 .width--max {
