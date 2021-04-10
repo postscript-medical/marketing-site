@@ -16,6 +16,10 @@
     margin-bottom: $size_400;
 }
 
+.stacker--tightest> :not(:last-child) {
+    margin-bottom: $size_200;
+}
+
 .stacker--large> :not(:last-child) {
     margin-bottom: $size_700;
 }

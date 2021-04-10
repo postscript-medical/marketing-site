@@ -10,9 +10,9 @@
   {{ subheader }}
 </p>
 
-<ul class="contributor-avatars">
+<ul class="contributor-avatars stacker--large">
   {% for contributor in contributors %}
-    <li>
+    <li class="contributor-avatar">
       {% set avatarContent = contributor.data %}
       {% include "partials/contributor-avatar.njk" %}
     </li>

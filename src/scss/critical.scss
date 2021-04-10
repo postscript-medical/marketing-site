@@ -31,13 +31,13 @@ h1 {
 }
 
 h2 {
-    font-size: $size_600;
+    font-size: $size_700;
     line-height: 1.2;
     max-width: 25ch;
 }
 
 h3 {
-    font-size: $size_500;
+    font-size: $size_600;
     line-height: 1.25;
     max-width: 33ch;
 }
@@ -82,6 +82,16 @@ a.cta {
     color: $color_light;
     background-color: $color_primary;
     border-radius: 1.5em;
+    display: inline-block;
+    padding: $size_300 $size_500;
+}
+
+a.cta--b {
+    color: $color_light;
+    background-color: $color_primary;
+    border-radius: 0.25em;
+    box-shadow: 0px 0.125rem 0.25rem $color_secondary;
+    display: inline-block;
     padding: $size_300 $size_500;
 }
 
@@ -132,6 +142,30 @@ input[type=email].secondary {
 
 .percentage-ring circle {
     stroke: $color_primary;
+}
+
+.contributors {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contributor-avatars {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contributor-avatar {
+    max-width: $width_min;
+    padding-right: $size_200;
+    padding-left: $size_200;
+}
+
+.contributor-avatar__name {
+    font-weight: 600;
 }
 
 @import '_layouts';
