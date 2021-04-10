@@ -1,0 +1,29 @@
+@import '_config';
+.research-findings__card> :not(:last-child) {
+    margin-bottom: $size_400;
+}
+
+.research-findings__card__percentage {
+    font-size: $size_800;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media screen and (min-width: $break_one) {
+    .research-findings__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
+        gap: $size_400 $size_900;
+    }
+    .research-findings__card>* {
+        grid-column-start: 1;
+        margin-bottom: 0;
+    }
+    .research-findings__card:nth-of-type(odd)>* {
+        grid-column-start: 2;
+    }
+    .research-findings__card> :first-child {
+        align-self: end;
+    }
+}

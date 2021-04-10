@@ -32,21 +32,13 @@
             </p>
 
             <ul class="footer__list">
-                <li>
-                    <a href="/research">Research</a>
-                </li>
-
-                <li>
-                    <a href="/contributors">Contributors</a>
-                </li>
-
-                <li>
-                    <a href="/pricing">Pricing</a>
-                </li>
-
-                <li>
-                    <a href="/about-us">About us</a>
-                </li>
+                {% for item in navigation.items %}
+                    <li>
+                        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
+                            {{ item.text }}
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </li>
 
