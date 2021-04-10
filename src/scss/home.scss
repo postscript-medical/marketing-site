@@ -3,26 +3,44 @@
     display: grid;
     gap: 0 2rem;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
+}
+
+.intro-card:nth-of-type(even) {
+    grid-template-columns: 3fr 2fr;
 }
 
 .intro-card>* {
     grid-column-start: 2;
 }
 
-.intro-card>img {
+.intro-card:nth-of-type(even)>* {
     grid-column-start: 1;
-    grid-row: 1 / -1;
 }
 
-.intro-card--inverted {
+.intro-card--b {
+    text-align: center;
+}
+
+.intro-card--b>* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.effectiveness {
+    background-color: $color_accent;
+    color: $color_light;
+    padding: $size_900;
+}
+
+.effectiveness-grid {
     display: grid;
-    gap: 0 2rem;
-    grid-template-rows: 3fr 2fr;
-    grid-template-rows: 1fr min-content 1fr;
+    gap: $size_400;
+    grid-template-columns: 1.25fr 3fr;
+    grid-template-rows: min-content min-content 1fr;
 }
 
-.intro-card--inverted>img {
+.effectiveness-grid .key-findings-group {
     grid-column-start: 2;
     grid-row: 1 / -1;
 }

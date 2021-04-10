@@ -31,13 +31,13 @@ h1 {
 }
 
 h2 {
-    font-size: $size_700;
+    font-size: $size_600;
     line-height: 1.2;
     max-width: 25ch;
 }
 
 h3 {
-    font-size: $size_600;
+    font-size: $size_500;
     line-height: 1.25;
     max-width: 33ch;
 }
@@ -121,7 +121,7 @@ input[type=email].secondary {
 }
 
 .percentage-ring text {
-    fill: $color_dark;
+    fill: currentColor;
     font-weight: 900;
     font-size: $size_500;
 }
