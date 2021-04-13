@@ -159,6 +159,9 @@ input[type=email].secondary {
 }
 
 .contributor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: $width_min;
     padding-right: $size_200;
     padding-left: $size_200;
