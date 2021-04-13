@@ -21,6 +21,54 @@
     align-items: center;
 }
 
+.effectiveness-grid> :not(:last-child) {
+    margin-bottom: $size_400;
+}
+
+.caroussel {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $width_half;
+    overflow: hidden;
+    text-align: center;
+}
+
+.caroussel>* {
+    width: 100%;
+    flex: 0 0 auto;
+    padding: $size_400;
+    animation: caroussel 10s ease-in-out 1s infinite;
+}
+
+@keyframes caroussel {
+    0% {
+        transform: translateX(0);
+    }
+    14.285% {
+        transform: translateX(0);
+    }
+    28.57% {
+        transform: translateX(-100%);
+    }
+    42.85% {
+        transform: translateX(-100%);
+    }
+    57.14% {
+        transform: translateX(-200%);
+    }
+    71.42% {
+        transform: translateX(-200%);
+    }
+    85.71% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @media screen and (min-width:$break_one) {
     .intro-card {
         display: grid;
@@ -45,6 +93,9 @@
         gap: $size_400;
         grid-template-columns: 1.25fr 3fr;
         grid-template-rows: min-content min-content 1fr;
+    }
+    .effectiveness-grid> :not(:last-child) {
+        margin-bottom: 0;
     }
     .effectiveness-grid .key-findings-group {
         grid-column-start: 2;
