@@ -1,13 +1,17 @@
 {% set avatar = avatarContent %}
 
 <figure class="stacker--tightest">
-    {% include "partials/avatar-default.svg" %}
+    {% if avatar.avatar_url %}
+      <img class="contributor__avatar" src="{{ avatar.avatar_url }}" alt="{{ avatar.name }}" />
+    {% else %}
+      {% include "partials/avatar-default.svg" %}
+    {% endif %}
 
     <figcaption class="stacker--tightest">
-      <p class="contributor-avatar__name">
+      <p class="contributor__name">
         {{ avatar.name }}
       </p>
-      <p class="contributor-avatar__profession">
+      <p class="contributor__profession">
         {{ avatar.profession }}
       </p>
     </figcaption>

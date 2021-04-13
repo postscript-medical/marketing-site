@@ -151,21 +151,28 @@ input[type=email].secondary {
     text-align: center;
 }
 
-.contributor-avatars {
+.contributor__list {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.contributor-avatar {
+.contributor {
     max-width: $width_min;
     padding-right: $size_200;
     padding-left: $size_200;
 }
 
-.contributor-avatar__name {
+.contributor__name {
     font-weight: 600;
+}
+
+.contributor__avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
 }
 
 @import '_layouts';
