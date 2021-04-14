@@ -1,4 +1,4 @@
-<section class="hospitals stacker--large full-bleed">
+<section class="supporters stacker--large full-bleed">
     <header class="stacker">
         <h2>
             PostScript is supported by
@@ -7,8 +7,8 @@
 
     <ul class="horizontal-gallery">
         {% for supporter in supporters %}
-            {% set hospitalCardContent = supporter %}
-            {% include "partials/hospital-card--compact.njk" %}
+            {% set supporterCardContent = supporter %}
+            {% include "partials/supporter-card--compact.njk" %}
         {% endfor %}
     </ul>
 </section>
