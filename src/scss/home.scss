@@ -72,18 +72,30 @@
 @media screen and (min-width:$break_one) {
     .intro-card {
         display: grid;
-        gap: 0 2rem;
-        grid-template-columns: 2fr 3fr;
-        grid-template-rows: min-content min-content min-content;
+        gap: $size_300 $size_600;
+        grid-template-columns: 30rem 31rem;
+        grid-template-rows: 1fr min-content 1fr;
+        justify-content: center;
+    }
+    .intro-card> :first-child {
+        align-self: end;
     }
     .intro-card:nth-of-type(even) {
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 31rem 30rem;
     }
     .intro-card>* {
         grid-column-start: 2;
     }
+    .intro-card img {
+        align-self: center;
+        grid-column-start: 1;
+        grid-row: 1 / -1;
+    }
     .intro-card:nth-of-type(even)>* {
         grid-column-start: 1;
+    }
+    .intro-card:nth-of-type(even) img {
+        grid-column-start: 2;
     }
     .effectiveness {
         text-align: left;
