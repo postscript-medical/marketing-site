@@ -1,7 +1,11 @@
 const keyFindings = [{
         heading: 'Improved communication',
         percentage: 83,
-        summary: 'Patitent communication was enhanced'
+        summary: 'Patitent communication was enhanced',
+        image: {
+            src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618668971/postscript-medical/marketing-website/improved-communication_wwposz.jpg',
+            alt: ''
+        }
     },
     {
         percentage: 81,
@@ -14,7 +18,11 @@ const keyFindings = [{
     {
         heading: 'Time well spent',
         percentage: 72,
-        summary: 'Use of time during consultation was more efficient'
+        summary: 'Use of time during consultation was more efficient',
+        image: {
+            src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618668971/postscript-medical/marketing-website/time-well-spent_juws9t.jpg',
+            alt: ''
+        }
     },
     {
         percentage: 66,

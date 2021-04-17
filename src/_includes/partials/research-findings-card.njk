@@ -1,15 +1,21 @@
 {% set content = researchFindingsCardContent %}
 
 <article class="research-findings__card">
-  <h2>
-    {{ researchFindingsCardContent.heading }}
-  </h2>
+  <div class="stacker">
+    <h2>
+      {{ researchFindingsCardContent.heading }}
+    </h2>
 
-  <p class="research-findings__card__percentage">
-    {{ researchFindingsCardContent.percentage }}%
-  </p>
+    <p class="research-findings__card__percentage">
+      {{ researchFindingsCardContent.percentage }}%
+    </p>
 
-  <p>
-    {{ researchFindingsCardContent.summary }}
-  </p>
+    <p>
+      {{ researchFindingsCardContent.summary }}
+    </p>
+  </div>
+
+  {% if researchFindingsCardContent.image %}
+    <img src="{{ researchFindingsCardContent.image.src }}" alt="{{ researchFindingsCardContent.image.alt }}" />
+  {% endif %}
 </article>
