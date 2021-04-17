@@ -47,23 +47,6 @@ p {
     max-width: $width_paragraph;
 }
 
-table {
-    margin: auto;
-    border-collapse: collapse;
-    max-width: $width_paragraph;
-}
-
-table,
-td,
-th {
-    border: 1px solid;
-}
-
-td,
-th {
-    padding: $size_200;
-}
-
 a:link {
     color: $color_dark;
 }
@@ -80,21 +63,26 @@ a:visited {
     color: $color_darkish;
 }
 
-a.cta {
+a.cta,
+a.cta--b,
+a.cta--secondary {
     color: $color_light;
+    padding: $size_300 $size_500;
+    display: inline-block;
     background-color: $color_primary;
     border-radius: 1.5em;
-    display: inline-block;
-    padding: $size_300 $size_500;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 a.cta--b {
-    color: $color_light;
-    background-color: $color_primary;
     border-radius: 0.25em;
     box-shadow: 0px 0.125rem 0.25rem $color_secondary;
-    display: inline-block;
-    padding: $size_300 $size_500;
+}
+
+a.cta--secondary {
+    background-color: $color_dark;
 }
 
 button.secondary {

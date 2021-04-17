@@ -1,0 +1,88 @@
+@import '_config';
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr> :first-child {
+    min-width: 15ch;
+    text-align: left;
+}
+
+td,
+th {
+    padding: $size_600 $size_200;
+    width: 20%;
+}
+
+th {
+    font-size: $size_500;
+}
+
+td {
+    border-bottom: 1px solid $color_secondary;
+}
+
+tr,
+td {
+    /*
+      We need to pass the height value from the table, to the row and cell in order to have the .subscription-summary inherit it
+    */
+    height: 100%;
+}
+
+.pricing-table__wrapper {
+    overflow-x: auto;
+}
+
+.subscription-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.subscription-summary>:first-child {
+    margin-bottom: -$size_200;
+}
+
+.subscription-summary>:last-child {
+    margin-top: auto;
+}
+
+.price {
+    font-size: $size_700;
+    font-weight: 600;
+}
+
+.billing-frequency {
+    text-transform: uppercase;
+    color: $color_secondary;
+    font-size: 0.9em;
+}
+
+.included,
+.not-included {
+    overflow-x: hidden;
+}
+
+.included span,
+.not-included span {
+    position: absolute;
+    left: -100%;
+}
+
+.included:before,
+.not-included:before {
+    content: '';
+    background-color: $color_primary;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.not-included:before {
+    background-color: $color_secondary;
+}

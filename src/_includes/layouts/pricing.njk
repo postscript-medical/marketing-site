@@ -1,324 +1,403 @@
+{% set pageCriticalStyles = ['css/pricing.css'] %}
+
 {% extends "layouts/base.njk" %}
 
 {% include "partials/section-supporters.njk" %}
 
 {% block content %}
-  <table>
-    <tr>
-      <th>
-        Features
-      </th>
-      
-      <th>
-        Individuals
-      </th>
-      
-      <th>
-        Teams
-      </th>
-      
-      <th>
-        Hospitals
-      </th>
-      
-      <th>
-        Custom
-      </th>
-    </tr>
-
-    <tr>
-      <td>
-        &nbsp;
-      </td>
-
-      <td>
-        <span>
-          £9.95
-        </span>
+  <div class="pricing-table__wrapper width--max">
+    <table>
+      <tr>
+        <th>
+          Features
+        </th>
         
-        <span>
-          per month
-        </span>
+        <th>
+          Individual
+        </th>
         
-        <a href="https://app.postscriptmedical.com/sign-up?plan=1">
-          Get started
-        </a>
-      </td>
-
-      <td>
-        <span>
-          £995
-        </span>
+        <th>
+          Teams
+        </th>
         
-        <span>
-          per year
-        </span>
+        <th>
+          Hospitals
+        </th>
         
-        <a href="https://app.postscriptmedical.com/sign-up?plan=2">
-          Get started
-        </a>
-      </td>
-      
-      <td>
-        <span>
-          £9,995
-        </span>
+        <th>
+          Custom
+        </th>
+      </tr>
+
+      <tr>
+      </tr>
+
+      <tr>
+        <td>
+          &nbsp;
+        </td>
+
+        <td>
+          <div class="subscription-summary stacker--tightest">
+            <span class="price">
+              £9.95
+            </span>
+            
+            <span class="billing-frequency">
+              per month
+            </span>
+            
+            <a href="https://app.postscriptmedical.com/sign-up?plan=1" class="cta">
+              Get started
+            </a>
+          </div>
+        </td>
+
+        <td>
+          <div class="subscription-summary stacker--tightest">
+            <span class="price">
+              £995
+            </span>
+            
+            <span class="billing-frequency">
+              per year
+            </span>
+            
+            <a href="https://app.postscriptmedical.com/sign-up?plan=2" class="cta">
+              Get started
+            </a>
+          </div>
+        </td>
         
-        <span>
-          per year
-        </span>
+        <td>
+          <div class="subscription-summary stacker--tightest">
+            <span class="price">
+              £9,995
+            </span>
+            
+            <span class="billing-frequency">
+              per year
+            </span>
+            
+            <a href="https://app.postscriptmedical.com/sign-up?plan=3" class="cta">
+              Get started
+            </a>
+          </div>
+        </td>
+
+        <td>
+          <div class="subscription-summary stacker--tightest">
+            <span>
+              Please <a href="mailto:admin@postscriptmedical.com?subject=Custom%20plan%20enquiry">contact us</a> to discuss your requirements
+            </span>
+            <a href="mailto:admin@postscriptmedical.com?subject=Custom%20plan%20enquiry" class="cta--secondary">
+              Contact us
+            </a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Users
+        </td>
+
+        <td>
+          1
+        </td>
+
+        <td>
+          Up to 10
+        </td>
         
-        <a href="https://app.postscriptmedical.com/sign-up?plan=3">
-          Get started
-        </a>
-      </td>
+        <td>
+          Unlimited
+        </td>
 
-      <td>
-        <a href="mailto:admin@postscriptmedical.com?subject=Custom%20plan%20enquiry">
-          Contact us directly
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Users
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        1
-      </td>
+      <tr>
+        <td>
+          Access to single specialty illustrations
+        </td>
 
-      <td>
-        Up to 10
-      </td>
-      
-      <td>
-        Unlimited
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Access to single specialty illustrations
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Included
-      </td>
+      <tr>
+        <td>
+          Smartphone, tablet and desktop access
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Smartphone, tablet and desktop access
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Included
-      </td>
+      <tr>
+        <td>
+          Annotation tools
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Annotation tools
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Included
-      </td>
+      <tr>
+        <td>
+          Email function
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Email function
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Included
-      </td>
+      <tr>
+        <td>
+          Print function
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Print function
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Included
-      </td>
+      <tr>
+        <td>
+          Access all specialties
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Access all specialties
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Not included
-      </td>
+      <tr>
+        <td>
+          Multi-user management
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Multi-user management
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Not included
-      </td>
+      <tr>
+        <td>
+          Dedicated support
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Dedicated support
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Not included
-      </td>
+      <tr>
+        <td>
+          Training sessions
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
+        
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Training sessions
-      </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
 
-      <td>
-        Not included
-      </td>
+      <tr>
+        <td>
+          Add more specialties for £4.95 each
+        </td>
 
-      <td>
-        Included
-      </td>
-      
-      <td>
-        Included
-      </td>
+        <td class="included">
+          <span>
+            Included
+          </span>
+        </td>
 
-      <td>
-        &nbsp;
-      </td>
-    </tr>
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
+        
+        <td class="not-included">
+          <span>
+            Not included
+          </span>
+        </td>
 
-    <tr>
-      <td>
-        Add more specialties for £4.95 each
-      </td>
-
-      <td>
-        Included
-      </td>
-
-      <td>
-        Not included
-      </td>
-      
-      <td>
-        Not included
-      </td>
-
-      <td>
-        &nbsp;
-      </td>
-    </tr>
-  </table>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
+    </table>
+  </div>
 {% endblock %}
