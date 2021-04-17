@@ -69,7 +69,7 @@
     }
 }
 
-@media screen and (min-width:$break_one) {
+@media screen and (min-width: $break_two) {
     .intro-card {
         display: grid;
         gap: $size_300 $size_600;

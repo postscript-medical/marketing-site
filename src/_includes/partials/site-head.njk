@@ -4,6 +4,10 @@
             {% include "partials/brand.svg" %}
         </a>
 
+        <button class="burger-toggle" data-enabled="false" data-state="closed" aria-label="Open menu">
+            <span class="burger-toggle__icon"></span>
+        </button>
+
         <nav class="site-head__nav" aria-label="Primary">
             <ul class="nav__list links--primary wrapper">
                 {% for item in navigation.items %}
