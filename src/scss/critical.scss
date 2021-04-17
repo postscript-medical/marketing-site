@@ -112,6 +112,11 @@ input[type=email].secondary {
     padding: $size_200 $size_300;
 }
 
+ol:not([class]) li:not(:last-child),
+ul:not([class]) li:not(:last-child) {
+    margin-bottom: $size_400;
+}
+
 .page__sub-heading {
     margin-left: auto;
     margin-right: auto;
