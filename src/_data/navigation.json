@@ -1,5 +1,5 @@
 {
-    "items": [{
+    "primary": [{
             "text": "Research",
             "url": "/research/"
         },
@@ -14,6 +14,19 @@
         {
             "text": "About us",
             "url": "/about-us/"
+        }
+    ],
+    "legals": [{
+            "text": "Cookie policy",
+            "url": "/cookie-policy"
+        },
+        {
+            "text": "Terms of use",
+            "url": "/terms-of-use"
+        },
+        {
+            "text": "Privacy policy",
+            "url": "/privacy-policy"
         }
     ]
 }

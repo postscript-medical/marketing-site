@@ -2,37 +2,32 @@
     <ul class="footer__list--primary">
         <li class="footer__item">
             <p>
-                Legal
+                Navigation
             </p>
 
             <ul class="footer__list">
                 <li>
-                    <a href="/cookie-policy">
-                      Cookie policy
+                    <a href="/" {{ helpers.getLinkActiveState('/', page.url) | safe }}>
+                        Home
                     </a>
                 </li>
-
-                <li>
-                    <a href="/terms-of-use">
-                      Terms of use
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/privacy-policy">
-                      Privacy Policy
-                    </a>
-                </li>
+                {% for item in navigation.primary %}
+                    <li>
+                        <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
+                            {{ item.text }}
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </li>
 
         <li class="footer__item">
             <p>
-                Navigation
+                Legal
             </p>
 
             <ul class="footer__list">
-                {% for item in navigation.items %}
+                {% for item in navigation.legals %}
                     <li>
                         <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
                             {{ item.text }}

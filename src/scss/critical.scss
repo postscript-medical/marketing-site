@@ -68,7 +68,9 @@ a:link {
     color: $color_dark;
 }
 
+a[aria-current="page"],
 a[data-state="active"],
+a[aria-current="page"]:visited,
 a[data-state="active"]:visited {
     color: $color_primary;
     text-decoration: none;
