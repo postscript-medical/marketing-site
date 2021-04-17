@@ -1,4 +1,13 @@
 @import '_config';
+.intro-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-card> :not(:last-child) {
+    margin-bottom: $size_400;
+}
+
 .intro-card--b {
     text-align: center;
 }
@@ -39,30 +48,27 @@
     width: 100%;
     flex: 0 0 auto;
     padding: $size_400;
-    animation: caroussel 10s ease-in-out 1s infinite;
+    animation: caroussel 16s ease-in-out 1s infinite;
 }
 
 @keyframes caroussel {
     0% {
         transform: translateX(0);
     }
-    14.285% {
+    28.33% {
         transform: translateX(0);
     }
-    28.57% {
+    33.33% {
         transform: translateX(-100%);
     }
-    42.85% {
+    61.66% {
         transform: translateX(-100%);
     }
-    57.14% {
+    66.66% {
         transform: translateX(-200%);
     }
-    71.42% {
+    94.99% {
         transform: translateX(-200%);
-    }
-    85.71% {
-        transform: translateX(0);
     }
     100% {
         transform: translateX(0);
