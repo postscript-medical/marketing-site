@@ -3,7 +3,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-    <section class="about-us stacker">
+    <section class="about-us stacker--large">
         <p>
             PostScript Medical, founded by a gastroenterologist and dietitian, is for healthcare professionals who want to personalise care.
         </p>
@@ -11,5 +11,14 @@
         <p>
             Co-founders Rajan and Graeme embarked upon a journey to bring high quality digital illustrations, which can be annotated and individualised, to every patient they see.
         </p>
+
+        <ul class="founders stacker--large">
+        {% for founder in founders %}
+            <li class="founder">
+                {% set avatarContent = founder %}
+                {% include "partials/contributor-avatar.njk" %}
+            </li>
+        {% endfor %}
+        </ul>
     </section>
 {% endblock %}
