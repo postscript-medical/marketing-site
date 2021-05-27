@@ -47,7 +47,7 @@ const keyFindings = [{
     {
         heading: 'Unanimous positive feedback',
         percentage: 100,
-        summary: 'Would use our illustrative Guide in routine practice',
+        summary: 'Would use our Illustrative Guide in routine practice',
         image: {
             src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618951887/postscript-medical/marketing-website/positive-feedback_zvuqdy.jpg',
             alt: ''

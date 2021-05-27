@@ -1,5 +1,5 @@
 module.exports = [{
-        testimonial: 'This Illustrative Tool is great! It allows me to communicate and engage better with my patents. I definitely feel it has aided my practice and improved patient understanding of conditions and therapy decisions.',
+        testimonial: 'This Illustrative Tool is great! It allows me to communicate and engage better with my patients. I definitely feel it has aided my practice and improved patient understanding of conditions and therapy decisions.',
         name: 'Nishani Jayasooriya',
         profession: 'ST7 Gastroenterologist'
     },
