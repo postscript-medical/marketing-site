@@ -3,7 +3,7 @@ const keyFindings = [{
         percentage: 83,
         summary: 'Patitent communication was enhanced',
         image: {
-            src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618668971/postscript-medical/marketing-website/improved-communication_wwposz.jpg',
+            src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/improved-communication.jpg',
             alt: ''
         }
     },
@@ -20,7 +20,7 @@ const keyFindings = [{
         percentage: 72,
         summary: 'Use of time during consultation was more efficient',
         image: {
-            src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618668971/postscript-medical/marketing-website/time-well-spent_juws9t.jpg',
+            src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/time-well-spent.jpg',
             alt: ''
         }
     },
@@ -49,7 +49,7 @@ const keyFindings = [{
         percentage: 100,
         summary: 'Would use our Illustrative Guide in routine practice',
         image: {
-            src: 'https://res.cloudinary.com/obscura-limited/image/upload/v1618951887/postscript-medical/marketing-website/positive-feedback_zvuqdy.jpg',
+            src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/positive-feedback.jpg',
             alt: ''
         }
     },
