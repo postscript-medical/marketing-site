@@ -1,35 +1,21 @@
 {
-  "name": "postscript-medical",
+  "name": "postscript-marketing-website",
   "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
   "scripts": {
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
-    "test": "percy exec -- playwright test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Obscura-Limited/postscript-medical.git"
-  },
-  "keywords": [],
-  "author": "Pedro Tavares",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Obscura-Limited/postscript-medical/issues"
-  },
-  "homepage": "https://github.com/Obscura-Limited/postscript-medical#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "concurrently": "^7.3.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.54.8"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@percy/cli": "^1.26.2",
-    "@percy/playwright": "^1.0.4",
-    "@playwright/test": "^1.36.1"
-  }
+    "@sveltejs/kit": "next",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "prettier": "~2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.34.0"
+  },
+  "type": "module"
 }
