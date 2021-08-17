@@ -16,7 +16,7 @@ ul.horizontal-gallery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     max-width: $width_max;
     margin-right: auto;
     margin-left: auto;

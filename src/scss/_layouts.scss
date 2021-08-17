@@ -5,11 +5,13 @@
     grid-gap: $size_400;
 }
 
-.full-bleed {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+@supports (display: grid) {
+    .full-bleed {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .stacker> :not(:last-child) {

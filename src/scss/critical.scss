@@ -9,6 +9,7 @@ main,
 header {
     max-width: $width_max;
     margin: 0 auto;
+    display: block; /* because IE11 */
 }
 
 main {
@@ -148,7 +149,7 @@ ul:not([class]) li:not(:last-child) {
 
 .contributor__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
