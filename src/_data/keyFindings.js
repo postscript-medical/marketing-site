@@ -1,7 +1,7 @@
 const keyFindings = [{
         heading: 'Improved communication',
         percentage: 83,
-        summary: 'Patitent communication was enhanced',
+        summary: 'Patient communication was enhanced',
         image: {
             src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/improved-communication.jpg',
             alt: ''
