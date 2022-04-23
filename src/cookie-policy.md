@@ -24,8 +24,10 @@ _Functionality cookies_. These are used to recognise you when you return to any 
 
 _Targeting cookies_. These cookies record your visit to each of our websites, the pages you have visited and the links you have followed. We will use this information to make our website more relevant to your interests.
 
-| Cookie Name | Provider | Cookie description                 | Cookie type |
-  ---         | ---      | ---                                | ---
-|             |          | No cookies are set by this website |             |
+| Name         | Provider   | Description                 | Type        |
+  ---          | ---        | ---                         | ---
+| __stripe_mid | Stripe     | Provides fraud prevention   | Functional  |
+| __stripe_sid | Stripe     | Provides fraud prevention   | Functional  |
+| __nf_jwt     | PostScript | Enables user authentication | Necessary   |
 
 If you wish to opt-out of our placing of cookies onto your computer or device, please adjust your internet browsers settings to restrict cookies as detailed in your internet browser's help menu. You may also wish to delete cookies which have already been placed. For instructions on how to do this, please consult your internet browser’s help menu.        
