@@ -4,7 +4,9 @@ const keyFindings = [{
         summary: 'Patient communication was enhanced',
         image: {
             src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/improved-communication.jpg',
-            alt: ''
+            alt: '',
+            width: 1280,
+            height: 904,
         }
     },
     {
@@ -21,7 +23,9 @@ const keyFindings = [{
         summary: 'Use of time during consultation was more efficient',
         image: {
             src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/time-well-spent.jpg',
-            alt: ''
+            alt: '',
+            width: 1280,
+            height: 904,
         }
     },
     {
@@ -34,7 +38,7 @@ const keyFindings = [{
     },
     {
         percentage: 74,
-        summary: 'Patients have a better understanding of their medications'
+        summary: 'Patients have a better understanding of their medications'
     },
     {
         percentage: 85,
@@ -50,7 +54,9 @@ const keyFindings = [{
         summary: 'Would use our Illustrative Guide in routine practice',
         image: {
             src: 'https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/positive-feedback.jpg',
-            alt: ''
+            alt: '',
+            width: 1280,
+            height: 904,
         }
     },
 ]

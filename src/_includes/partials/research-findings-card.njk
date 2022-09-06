@@ -16,6 +16,11 @@
   </div>
 
   {% if researchFindingsCardContent.image %}
-    <img src="{{ researchFindingsCardContent.image.src }}" alt="{{ researchFindingsCardContent.image.alt }}" />
+    <img
+      src="{{ researchFindingsCardContent.image.src }}"
+      alt="{{ researchFindingsCardContent.image.alt }}"
+      width="{{researchFindingsCardContent.image.width}}"
+      height="{{researchFindingsCardContent.image.height}}"
+    />
   {% endif %}
 </article>
