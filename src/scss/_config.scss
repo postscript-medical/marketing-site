@@ -1,7 +1,9 @@
+@use "sass:math";
+
 // Constants
 $width_min: 20ch;
 $width_max: 1200px;
-$width_half: $width_max / 2;
+$width_half: math.div($width_max, 2);
 $width_paragraph: 60ch;
 // Sizing scale
 $base_size: 1rem;
