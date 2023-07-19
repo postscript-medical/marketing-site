@@ -2,12 +2,90 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-		%svelte.head%
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+		%sveltekit.head%
+    <style>
+      /* A modified version of my "modern reset" https://github.com/hankchizljaw/modern-css-reset */
+
+      /* Box sizing rules */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* Remove default margin */
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      figure,
+      blockquote,
+      dl,
+      dd {
+        margin: 0;
+      }
+
+      /* Set core root defaults */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Set core body defaults */
+      body {
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+      }
+
+      /* Remove list styles on ul, ol elements with a class attribute */
+      ul[class],
+      ol[class] {
+        padding: 0;
+        list-style: none;
+      }
+
+      /* A elements that don’t have a class get default styles */
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      /* Make images easier to work with */
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+
+      /* Inherit fonts for inputs and buttons */
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* IE11 considerations */
+      figcaption {
+        width: 100%;
+      }
+
+      /* Remove all animations and transitions for people that prefer not to see them */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01s !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01s !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
 	</head>
-	<body id="svelte">
-		%svelte.body%
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
