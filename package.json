@@ -1,35 +1,35 @@
 {
-  "name": "postscript-medical",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy",
-    "test": "percy exec -- playwright test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Obscura-Limited/postscript-medical.git"
-  },
-  "keywords": [],
-  "author": "Pedro Tavares",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Obscura-Limited/postscript-medical/issues"
-  },
-  "homepage": "https://github.com/Obscura-Limited/postscript-medical#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "concurrently": "^7.3.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.54.8"
-  },
-  "devDependencies": {
-    "@percy/cli": "^1.26.2",
-    "@percy/playwright": "^1.0.4",
-    "@playwright/test": "^1.36.1"
-  }
+	"name": "marketing-site",
+	"version": "2.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev --host",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "percy exec -- playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@percy/cli": "^1.26.2",
+		"@percy/playwright": "^1.0.4",
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }

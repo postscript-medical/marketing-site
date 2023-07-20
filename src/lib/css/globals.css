@@ -1,0 +1,206 @@
+:root {
+  /* Constants */
+  --width_min: 20ch;
+  --width_max: 1200px;
+  --width_half: calc(var(--width_max) * 0.5);
+  --width_paragraph: 60ch;
+  /* Sizing scale */
+  --base_size: 1rem;
+  --size_100: calc(var(--base_size) * 0.25);
+  --size_200: calc(var(--base_size) * 0.5);
+  --size_300: calc(var(--base_size) * 0.75);
+  --size_400: calc(var(--base_size));
+  --size_500: calc(var(--base_size) * 1.33);
+  --size_600: calc(var(--base_size) * 1.77);
+  --size_700: calc(var(--base_size) * 2.36);
+  --size_800: calc(var(--base_size) * 3.15);
+  --size_900: calc(var(--base_size) * 4.2);
+  /* Colours */
+  --color_light: #FFFFFF;
+  --color_lightish: #ececec;
+  --color_darkish: #575757;
+  --color_dark: #252525;
+  --color_primary: #379A46;
+  --color_primary_light: #389A2F;
+  /* $color_primary_dark:  */
+  --color_secondary: #A1A1A1;
+  --color_accent: #1C1447;
+  /* Breakpoints */
+  --break_one: 600px;
+  --break_two: 1024px;
+}
+
+html {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--color_dark);
+}
+
+main,
+header {
+  max-width: var(--width_max);
+  margin: 0 auto;
+  display: block; /* because IE11 */
+}
+
+main {
+  padding: var(--size_900) var(--size_400);
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: var(--size_600);
+}
+
+h1 {
+  font-size: var(--size_800);
+  line-height: 1.1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 19ch;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--size_700);
+  line-height: 1.2;
+  max-width: 25ch;
+}
+
+h3 {
+  font-size: var(--size_600);
+  line-height: 1.25;
+  max-width: 33ch;
+}
+
+p {
+  font-size: var(--size_400);
+  max-width: var(--width_paragraph);
+}
+
+a:link {
+  color: var(--color_dark);
+}
+
+a[aria-current="page"],
+a[data-state="active"],
+a[aria-current="page"]:visited,
+a[data-state="active"]:visited {
+  color: var(--color_primary);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color_darkish);
+}
+
+a.cta,
+a.cta--b,
+a.cta--secondary {
+  color: var(--color_light);
+  padding: var(--size_300) var(--size_500);
+  display: inline-block;
+  background-color: var(--color_primary);
+  border-radius: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+a.cta--b {
+  border-radius: 0.25em;
+  box-shadow: 0px 0.125rem 0.25rem var(--color_secondary);
+}
+
+a.cta--secondary {
+  background-color: var(--color_dark);
+}
+
+button.secondary {
+  background-color: var(--color_light);
+  border: none;
+  color: var(--color_dark);
+  padding: var(--size_200) var(--size_300);
+  text-transform: lowercase;
+}
+
+input[type=email].secondary {
+  background-color: transparent;
+  border: 1px solid var(--color_secondary);
+  color: var(--color_secondary);
+  padding: var(--size_200) var(--size_300);
+}
+
+ol:not([class]) li:not(:last-child),
+ul:not([class]) li:not(:last-child) {
+  margin-bottom: var(--size_400);
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid var(--color_lightish);
+}
+
+th,
+td {
+  padding: var(--size_100) var(--size_400);
+}
+
+th,
+tr:nth-child(even) {
+  background-color: var(--color_lightish);
+}
+
+.page__sub-heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.percentage-ring {
+  fill: var(--color_primary);
+  width: var(--width_min);
+  height: var(--width_min);
+}
+
+.percentage-ring text {
+  fill: currentColor;
+  font-weight: 900;
+  font-size: var(--size_500);
+}
+
+.percentage-ring path {
+  opacity: 0.5;
+}
+
+.percentage-ring circle {
+  stroke: var(--color_primary);
+}
+
+.contributor__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contributor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--width_min);
+  padding-right: var(--size_200);
+  padding-left: var(--size_200);
+}
+
+.contributor__name {
+  font-weight: 600;
+}
+
+.contributor__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+}

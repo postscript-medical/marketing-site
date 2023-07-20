@@ -1,0 +1,50 @@
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--width_min), 1fr));
+  grid-gap: var(--size_400);
+}
+
+@supports (display: grid) {
+  .full-bleed {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
+
+.stacker> :not(:last-child) {
+  margin-bottom: var(--size_400);
+}
+
+.stacker--tightest> :not(:last-child) {
+  margin-bottom: var(--size_200);
+}
+
+.stacker--large> :not(:last-child) {
+  margin-bottom: var(--size_700);
+}
+
+.stacker--x-large> :not(:last-child) {
+  margin-bottom: var(--size_900);
+}
+
+.width--max {
+  max-width: var(--width_max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width--half {
+  max-width: var(--width_half);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper> :not(:last-child) {
+  margin-right: var(--size_500);
+}
