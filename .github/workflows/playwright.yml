@@ -18,11 +18,10 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Waiting for Netlify Preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: voorhoede/get-netlify-url@v2
         id: wait-for-netflify
         with:
-          site_name: "postscript-medical"
-          max_timeout: 180
+          site-name: "postscript-medical"
       - name: Run Playwright tests
         run: npm run test
         env:
