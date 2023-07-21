@@ -48,84 +48,93 @@
   <i>Targeting cookies</i>. These cookies record your visit to each of our websites, the pages you have visited and the links you have followed. We will use this information to make our website more relevant to your interests.
 </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>
-        Name
-      </th>
-
-      <th>
-        Provider
-      </th>
-
-      <th>
-        Description
-      </th>
-
-      <th>
-        Type
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        __stripe_mid
-      </td>
-
-      <td>
-        Stripe
-      </td>
-
-      <td>
-        Provides fraud prevention
-      </td>
-
-      <td>
-        Functional
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        __stripe_sid
-      </td>
-
-      <td>
-        Stripe
-      </td>
-
-      <td>
-        Provides fraud prevention
-      </td>
-
-      <td>
-        Functional
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        __nf_jwt
-      </td>
-
-      <td>
-        PostScript
-      </td>
-
-      <td>
-        Enables user authentication
-      </td>
-
-      <td>
-        Necessary
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+  
+        <th>
+          Provider
+        </th>
+  
+        <th>
+          Description
+        </th>
+  
+        <th>
+          Type
+        </th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr>
+        <td>
+          __stripe_mid
+        </td>
+  
+        <td>
+          Stripe
+        </td>
+  
+        <td>
+          Provides fraud prevention
+        </td>
+  
+        <td>
+          Functional
+        </td>
+      </tr>
+  
+      <tr>
+        <td>
+          __stripe_sid
+        </td>
+  
+        <td>
+          Stripe
+        </td>
+  
+        <td>
+          Provides fraud prevention
+        </td>
+  
+        <td>
+          Functional
+        </td>
+      </tr>
+  
+      <tr>
+        <td>
+          __nf_jwt
+        </td>
+  
+        <td>
+          PostScript
+        </td>
+  
+        <td>
+          Enables user authentication
+        </td>
+  
+        <td>
+          Necessary
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <p>
   If you wish to opt-out of our placing of cookies onto your computer or device, please adjust your internet browsers settings to restrict cookies as detailed in your internet browser's help menu. You may also wish to delete cookies which have already been placed. For instructions on how to do this, please consult your internet browser’s help menu.
 </p>
+
+<style>
+  .table-container {
+    max-width: 100%;
+    overflow: auto;
+  }
+</style>
