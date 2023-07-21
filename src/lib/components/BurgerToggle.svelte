@@ -1,9 +1,28 @@
 <script lang="ts">
-  export let enabled: string = "false";
-  export let state: string = "closed"
+  import { onMount } from "svelte";
+
+  const OPEN: string = "open";
+  const CLOSED: string =  "closed";
+
+  let enabled: string = "false";
+  let state: string = CLOSED;
+
+  onMount(() => {
+    enabled = "true";
+  });
+
+  function toggleBurger () {
+    state = state === OPEN ? CLOSED : OPEN;
+  }
 </script>
 
-<button class="burger-toggle" data-enabled={enabled} data-state={state} aria-label="Open menu">
+<button
+  aria-label="Open menu"
+  class="burger-toggle"
+  data-enabled={enabled}
+  data-state={state}
+  on:click={toggleBurger}
+  >
   <span class="burger-toggle__icon"></span>
 </button>
 
@@ -59,20 +78,20 @@
     .burger-toggle[data-enabled="true"] {
       display: block;
     }
-    .burger-toggle[data-enabled="true"]+nav {
+    .burger-toggle[data-enabled="true"] + :global(nav) {
       width: 100%;
       display: none;
     }
-    .burger-toggle[data-enabled="true"]+nav .links--primary {
+    .burger-toggle[data-enabled="true"] + :global(nav) :global(.links--primary) {
       flex-direction: column;
       align-items: center;
       margin-top: var(--size_600);
     }
-    .burger-toggle[data-enabled="true"]+nav .links--primary>* {
+    .burger-toggle[data-enabled="true"] + :global(nav) :global(.links--primary) > :global(*) {
       margin-bottom: var(--size_600);
       margin-right: 0;
     }
-    .burger-toggle[data-enabled="true"][data-state="open"]+nav {
+    .burger-toggle[data-enabled="true"][data-state="open"] + :global(nav) {
       display: block;
     }
     .burger-toggle[data-enabled="true"][data-state="open"] .burger-toggle__icon {
