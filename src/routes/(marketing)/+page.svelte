@@ -77,6 +77,24 @@
 
 <SectionContributors />
 
+<section class="orcha stacker--large">
+  <h2>Certifications</h2>
+
+  <a href="https://orchahealth.com/">
+    <img
+      src="https://res.cloudinary.com/postscript-medical/image/upload/c_scale,w_400/v1689936644/marketing-website/logos/orcha-logo_efrggh.png"
+      alt="The organization for the review of care and health apps"
+      width="200"
+      height="41"
+    />
+  </a>
+
+  <p>
+    Our application has been assessed and certified by the ORCHA, the world's leading, independent
+    digital health evaluation and distribution organisation.
+  </p>
+</section>
+
 <style>
   .intro-card {
     display: flex;
@@ -96,6 +114,13 @@
   .intro-card--b > * {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .orcha {
+    display: grid;
+    justify-items: center;
+    padding-top: var(--size_900);
+    text-align: center;
   }
 
   @media screen and (min-width: 1024px) {
