@@ -14,3 +14,12 @@
     See all contributors
   </a>
 </section>
+
+<style>
+  .contributors {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>
