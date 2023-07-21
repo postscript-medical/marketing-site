@@ -6,12 +6,11 @@
 <section class="effectiveness full-bleed">
   <div class="effectiveness-grid width--max">
     <div class="stacker">
-      <h2>
-        Just how effective is PostScript?
-      </h2>
+      <h2>Just how effective is PostScript?</h2>
 
       <p>
-        We evaluated the use of our illustrative tool with a group of Clinical Nurse specialists. This is what they said...
+        We evaluated the use of our illustrative tool with a group of Clinical Nurse specialists.
+        This is what they said...
       </p>
     </div>
 
@@ -33,7 +32,7 @@
     align-items: center;
   }
 
-  .effectiveness-grid> :not(:last-child) {
+  .effectiveness-grid > :not(:last-child) {
     margin-bottom: var(--size_400);
   }
 
@@ -54,11 +53,11 @@
         gap: var(--size_400);
         grid-template-columns: 1.25fr 3fr;
       }
-  
-      .effectiveness-grid> :not(:last-child) {
+
+      .effectiveness-grid > :not(:last-child) {
         margin-bottom: 0;
       }
-  
+
       .effectiveness-grid .key-findings-group {
         grid-column-start: 2;
         grid-row: 1 / -1;

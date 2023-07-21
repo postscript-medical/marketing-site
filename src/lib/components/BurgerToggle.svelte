@@ -1,17 +1,17 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  const OPEN: string = "open";
-  const CLOSED: string =  "closed";
+  const OPEN = "open";
+  const CLOSED = "closed";
 
-  let enabled: string = "false";
-  let state: string = CLOSED;
+  let enabled = "false";
+  let state = CLOSED;
 
   onMount(() => {
     enabled = "true";
   });
 
-  function toggleBurger () {
+  function toggleBurger() {
     state = state === OPEN ? CLOSED : OPEN;
   }
 </script>
@@ -22,8 +22,8 @@
   data-enabled={enabled}
   data-state={state}
   on:click={toggleBurger}
-  >
-  <span class="burger-toggle__icon"></span>
+>
+  <span class="burger-toggle__icon" />
 </button>
 
 <style>
@@ -40,41 +40,41 @@
     width: 2.25rem;
   }
 
-.burger-toggle__icon,
-.burger-toggle__icon::before,
-.burger-toggle__icon::after {
-  border: 1px solid var(--color_dark);
-  box-sizing: border-box;
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: var(--color_dark);
-  position: absolute;
-  border-radius: 3px;
-  left: 50%;
-  margin-left: -12px;
-  transition: transform 350ms ease-in-out;
-}
+  .burger-toggle__icon,
+  .burger-toggle__icon::before,
+  .burger-toggle__icon::after {
+    border: 1px solid var(--color_dark);
+    box-sizing: border-box;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--color_dark);
+    position: absolute;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -12px;
+    transition: transform 350ms ease-in-out;
+  }
 
-.burger-toggle__icon {
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .burger-toggle__icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.burger-toggle__icon::before,
-.burger-toggle__icon::after {
-  content: "";
-}
+  .burger-toggle__icon::before,
+  .burger-toggle__icon::after {
+    content: "";
+  }
 
-.burger-toggle__icon::before {
-  top: -8px;
-}
+  .burger-toggle__icon::before {
+    top: -8px;
+  }
 
-.burger-toggle__icon::after {
-  bottom: -8px;
-}
+  .burger-toggle__icon::after {
+    bottom: -8px;
+  }
 
-@media screen and (max-width: 600px ){
+  @media screen and (max-width: 600px) {
     .burger-toggle[data-enabled="true"] {
       display: block;
     }

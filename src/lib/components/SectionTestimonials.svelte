@@ -8,19 +8,19 @@
       <li>
         <figure class="stacker">
           <blockquote>
-              <p>
-                { testimonial }
-              </p>
+            <p>
+              {testimonial}
+            </p>
           </blockquote>
 
           <figcaption>
             <cite class="stacker-tightest">
               <p class="contributor__name">
-                { name }
+                {name}
               </p>
 
               <p class="contributor__profession">
-                { profession }
+                {profession}
               </p>
             </cite>
           </figcaption>
@@ -41,7 +41,7 @@
     text-align: center;
   }
 
-  .caroussel>* {
+  .caroussel > * {
     width: 100%;
     flex: 0 0 auto;
     padding: var(--size_400);

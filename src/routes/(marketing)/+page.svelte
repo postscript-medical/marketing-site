@@ -10,53 +10,64 @@
   subheading="An easy-to-use web application across multiple devices to enhance communication during consultations."
 />
 
-<img alt="" src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/application-1.jpg" width="2010" height="1412" />
+<img
+  alt=""
+  src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/application-1.jpg"
+  width="2010"
+  height="1412"
+/>
 
 <section class="intro stacker--x-large">
   <article class="intro-card">
     <div class="intro-card__content stacker">
-      <h2>
-        Communication made easy.
-      </h2>
+      <h2>Communication made easy.</h2>
 
       <p>
-        Overcome obstacles such as language barriers, hearing impairments and learning difficulties with individualised illustrations.
+        Overcome obstacles such as language barriers, hearing impairments and learning difficulties
+        with individualised illustrations.
       </p>
 
-      <a href="/research">
-        Review the research
-      </a>
+      <a href="/research"> Review the research </a>
     </div>
 
-    <img alt="" src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-1.jpg" width="1145" height="724" />
+    <img
+      alt=""
+      src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-1.jpg"
+      width="1145"
+      height="724"
+    />
   </article>
 
   <article class="intro-card">
     <div class="intro-card__content stacker">
-      <h2>
-        Improve the efficiency of consultations.
-      </h2>
+      <h2>Improve the efficiency of consultations.</h2>
 
-      <p>
-        An intuitive tool to simplify the message to patients.
-      </p>
+      <p>An intuitive tool to simplify the message to patients.</p>
     </div>
 
-    <img alt="" src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-2.jpg" width="1199" height="688" />
+    <img
+      alt=""
+      src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-2.jpg"
+      width="1199"
+      height="688"
+    />
   </article>
 
   <article class="intro-card--b stacker">
     <div class="intro-card__content stacker">
-      <h2>
-          Multi-device access.
-      </h2>
+      <h2>Multi-device access.</h2>
 
       <p>
-          High performance on your clinic room desktop and on the move with your tablet or smartphone.
+        High performance on your clinic room desktop and on the move with your tablet or smartphone.
       </p>
     </div>
 
-    <img alt="" src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-3.jpg" width="1812" height="1206" />
+    <img
+      alt=""
+      src="https://res.cloudinary.com/postscript-medical/image/upload/v1622576446/marketing-website/device-3.jpg"
+      width="1812"
+      height="1206"
+    />
   </article>
 </section>
 
@@ -72,7 +83,7 @@
     flex-direction: column;
   }
 
-  .intro-card> :not(:last-child) {
+  .intro-card > :not(:last-child) {
     margin-bottom: var(--size_400);
   }
 
@@ -81,8 +92,8 @@
     text-align: center;
   }
 
-  .intro-card__content> *,
-  .intro-card--b>* {
+  .intro-card__content > *,
+  .intro-card--b > * {
     margin-left: auto;
     margin-right: auto;
   }
