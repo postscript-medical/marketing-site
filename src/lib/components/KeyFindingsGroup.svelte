@@ -1,12 +1,12 @@
 <script lang="ts">
-  export let entries: { percentage: number, summary: string }[];
+  export let entries: { percentage: number; summary: string }[];
 
   /**
    * Returns the circumference of a circle based on its radius
    * @param {Number} radius The radius of the circle
    * @returns {Number} The circumference of the cicle
    */
-  function getCircleCircumference (radius: number): number {
+  function getCircleCircumference(radius: number): number {
     // circumference = 2 * PI * radius
     return 2 * 3.14 * radius;
   }
@@ -17,7 +17,7 @@
    * @param {Number} ratio The ratio of the full circumference
    * @returns {Number} The partial of a given circumference
    */
-  function getCircleCircumferencePartial (radius: number, ratio: number): number {
+  function getCircleCircumferencePartial(radius: number, ratio: number): number {
     return getCircleCircumference(radius) * ratio;
   }
 </script>
@@ -28,7 +28,7 @@
       <figure class="stacker">
         <svg class="percentage-ring" viewBox="0 0 100 100" width="100" height="100">
           <text x="52.5%" y="57.5%" text-anchor="middle">
-            { entry.percentage }%
+            {entry.percentage}%
           </text>
 
           <path
@@ -50,13 +50,13 @@
             r="45"
             fill="none"
             stroke-width="10"
-            stroke-dasharray={getCircleCircumferencePartial(45, entry.percentage / 100) }
+            stroke-dasharray={getCircleCircumferencePartial(45, entry.percentage / 100)}
             transform="rotate(-90, 50, 50)"
           />
         </svg>
 
         <figcaption>
-          { entry.summary }
+          {entry.summary}
         </figcaption>
       </figure>
     </li>
@@ -68,7 +68,7 @@
     text-align: center;
   }
 
-  .key-findings-group>li {
+  .key-findings-group > li {
     max-width: 25ch;
   }
 
@@ -83,7 +83,7 @@
     margin-left: auto;
   }
 
-  .horizontal-gallery>* {
+  .horizontal-gallery > * {
     padding: var(--size_400);
     max-width: var(--width_half);
   }

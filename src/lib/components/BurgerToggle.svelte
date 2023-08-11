@@ -1,10 +1,29 @@
 <script lang="ts">
-  export let enabled: string = "false";
-  export let state: string = "closed"
+  import { onMount } from "svelte";
+
+  const OPEN = "open";
+  const CLOSED = "closed";
+
+  let enabled = "false";
+  let state = CLOSED;
+
+  onMount(() => {
+    enabled = "true";
+  });
+
+  function toggleBurger() {
+    state = state === OPEN ? CLOSED : OPEN;
+  }
 </script>
 
-<button class="burger-toggle" data-enabled={enabled} data-state={state} aria-label="Open menu">
-  <span class="burger-toggle__icon"></span>
+<button
+  aria-label="Open menu"
+  class="burger-toggle"
+  data-enabled={enabled}
+  data-state={state}
+  on:click={toggleBurger}
+>
+  <span class="burger-toggle__icon" />
 </button>
 
 <style>
@@ -21,58 +40,58 @@
     width: 2.25rem;
   }
 
-.burger-toggle__icon,
-.burger-toggle__icon::before,
-.burger-toggle__icon::after {
-  border: 1px solid var(--color_dark);
-  box-sizing: border-box;
-  display: block;
-  width: 24px;
-  height: 3px;
-  background-color: var(--color_dark);
-  position: absolute;
-  border-radius: 3px;
-  left: 50%;
-  margin-left: -12px;
-  transition: transform 350ms ease-in-out;
-}
+  .burger-toggle__icon,
+  .burger-toggle__icon::before,
+  .burger-toggle__icon::after {
+    border: 1px solid var(--color_dark);
+    box-sizing: border-box;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--color_dark);
+    position: absolute;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -12px;
+    transition: transform 350ms ease-in-out;
+  }
 
-.burger-toggle__icon {
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .burger-toggle__icon {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.burger-toggle__icon::before,
-.burger-toggle__icon::after {
-  content: "";
-}
+  .burger-toggle__icon::before,
+  .burger-toggle__icon::after {
+    content: "";
+  }
 
-.burger-toggle__icon::before {
-  top: -8px;
-}
+  .burger-toggle__icon::before {
+    top: -8px;
+  }
 
-.burger-toggle__icon::after {
-  bottom: -8px;
-}
+  .burger-toggle__icon::after {
+    bottom: -8px;
+  }
 
-@media screen and (max-width: 600px ){
+  @media screen and (max-width: 600px) {
     .burger-toggle[data-enabled="true"] {
       display: block;
     }
-    .burger-toggle[data-enabled="true"]+nav {
+    .burger-toggle[data-enabled="true"] + :global(nav) {
       width: 100%;
       display: none;
     }
-    .burger-toggle[data-enabled="true"]+nav .links--primary {
+    .burger-toggle[data-enabled="true"] + :global(nav) :global(.links--primary) {
       flex-direction: column;
       align-items: center;
       margin-top: var(--size_600);
     }
-    .burger-toggle[data-enabled="true"]+nav .links--primary>* {
+    .burger-toggle[data-enabled="true"] + :global(nav) :global(.links--primary) > :global(*) {
       margin-bottom: var(--size_600);
       margin-right: 0;
     }
-    .burger-toggle[data-enabled="true"][data-state="open"]+nav {
+    .burger-toggle[data-enabled="true"][data-state="open"] + :global(nav) {
       display: block;
     }
     .burger-toggle[data-enabled="true"][data-state="open"] .burger-toggle__icon {

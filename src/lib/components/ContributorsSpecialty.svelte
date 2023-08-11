@@ -2,21 +2,17 @@
   import ContributorsAvatar from "./ContributorsAvatar.svelte";
 
   export let heading: string;
-  export let entries: { avatar_url: string, name: string; profession: string}[];
+  export let entries: { avatar_url: string; name: string; profession: string }[];
 </script>
 
 <h2>
-  { heading }
+  {heading}
 </h2>
 
 <ul class="contributor__list stacker--large">
   {#each entries as { avatar_url, name, profession }}
     <li>
-      <ContributorsAvatar
-        {avatar_url}
-        {name}
-        {profession}
-      />
+      <ContributorsAvatar {avatar_url} {name} {profession} />
     </li>
   {/each}
 </ul>

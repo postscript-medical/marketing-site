@@ -1,72 +1,72 @@
-import { test, expect } from '@playwright/test';
-import percySnapshot from '@percy/playwright';
+import { test, expect } from "@playwright/test";
+import percySnapshot from "@percy/playwright";
 
-test('Home', async ({ page, browserName }) => {
-  await page.goto('/');
+test("Home", async ({ page, browserName }) => {
+  await page.goto("/");
 
   await expect(page).toHaveTitle(/PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Home page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Home page");
   }
 });
 
-test('Research', async ({ page, browserName }) => {
-  await page.goto('/research');
+test("Research", async ({ page, browserName }) => {
+  await page.goto("/research");
 
   await expect(page).toHaveTitle(/Research papers - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Research page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Research page");
   }
 });
 
-test('Contributors', async ({ page, browserName }) => {
-  await page.goto('/contributors');
+test("Contributors", async ({ page, browserName }) => {
+  await page.goto("/contributors");
 
   await expect(page).toHaveTitle(/Contributors - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Contributors page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Contributors page");
   }
 });
 
-test('About us', async ({ page, browserName }) => {
-  await page.goto('/about-us');
+test("About us", async ({ page, browserName }) => {
+  await page.goto("/about-us");
 
   await expect(page).toHaveTitle(/About us - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'About us page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "About us page");
   }
 });
 
-test('Cookie policy', async ({ page, browserName }) => {
-  await page.goto('/cookie-policy');
+test("Cookie policy", async ({ page, browserName }) => {
+  await page.goto("/cookie-policy");
 
   await expect(page).toHaveTitle(/Cookie Policy - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Cookie policy page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Cookie policy page");
   }
 });
 
-test('Terms of use', async ({ page, browserName }) => {
-  await page.goto('/terms-of-use');
+test("Terms of use", async ({ page, browserName }) => {
+  await page.goto("/terms-of-use");
 
   await expect(page).toHaveTitle(/Terms of use - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Terms of use page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Terms of use page");
   }
 });
 
-test('Privacy policy', async ({ page, browserName }) => {
-  await page.goto('/privacy-policy');
+test("Privacy policy", async ({ page, browserName }) => {
+  await page.goto("/privacy-policy");
 
   await expect(page).toHaveTitle(/Privacy Policy - PostScript Medical/);
 
-  if (browserName === 'chromium') {
-    await percySnapshot(page, 'Privacy policy page');
+  if (browserName === "chromium") {
+    await percySnapshot(page, "Privacy policy page");
   }
 });

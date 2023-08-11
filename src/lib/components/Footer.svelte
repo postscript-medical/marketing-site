@@ -2,9 +2,9 @@
   import { page } from "$app/stores";
 
   import navigationLinks from "$lib/data/navigation-links.json";
-  import legalLinks from "$lib/data/legal-links.json"
+  import legalLinks from "$lib/data/legal-links.json";
 
-  function isActive (url: string): boolean {
+  function isActive(url: string): boolean {
     return $page.url.pathname.endsWith(url);
   }
 </script>
@@ -13,9 +13,7 @@
   {#key $page.url.pathname}
     <ul class="footer__list--primary">
       <li class="footer__item">
-        <p>
-          Navigation
-        </p>
+        <p>Navigation</p>
 
         <ul class="footer__list">
           <li>
@@ -27,7 +25,7 @@
               Home
             </a>
           </li>
-          
+
           {#each navigationLinks as { text, url }}
             <li>
               <a
@@ -43,9 +41,7 @@
       </li>
 
       <li class="footer__item">
-        <p>
-          Legal
-        </p>
+        <p>Legal</p>
 
         <ul class="footer__list">
           {#each legalLinks as { text, url }}
@@ -63,15 +59,11 @@
       </li>
 
       <li class="footer__item">
-        <p>
-          Social
-        </p>
+        <p>Social</p>
 
         <ul class="social-share">
           <li>
-            <a href="https://twitter.com/postscriptmed" target="_blank">
-              Twitter
-            </a>
+            <a href="https://twitter.com/postscriptmed" target="_blank">Twitter</a>
           </li>
 
           <li>
@@ -87,9 +79,9 @@
 
 <style>
   footer {
-  background-color: var(--color_dark);
-  color: var(--color_light);
-  padding: var(--size_700) var(--size_400) var(--size_800);
+    background-color: var(--color_dark);
+    color: var(--color_light);
+    padding: var(--size_700) var(--size_400) var(--size_800);
   }
 
   footer a:link {
@@ -107,16 +99,16 @@
     margin: auto;
   }
 
-  .footer__list--primary>* {
+  .footer__list--primary > * {
     min-width: var(--width_min);
   }
 
-  .footer__list--primary> :not(:last-child) {
+  .footer__list--primary > :not(:last-child) {
     flex-grow: 1;
   }
 
-  .footer__list--primary> :not(:last-child),
-  .footer__item> :not(:last-child) {
+  .footer__list--primary > :not(:last-child),
+  .footer__item > :not(:last-child) {
     margin-bottom: var(--size_500);
   }
 

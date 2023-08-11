@@ -1,7 +1,7 @@
 <script lang="ts">
   export let heading: string;
-  export let subheading: string = "";
-  export let title: string = "PostScript Medical"
+  export let subheading = "";
+  export let title = "PostScript Medical";
 </script>
 
 <svelte:head>

@@ -16,22 +16,23 @@
   --size_800: calc(var(--base_size) * 3.15);
   --size_900: calc(var(--base_size) * 4.2);
   /* Colours */
-  --color_light: #FFFFFF;
+  --color_light: #ffffff;
   --color_lightish: #ececec;
   --color_darkish: #575757;
   --color_dark: #252525;
-  --color_primary: #379A46;
-  --color_primary_light: #389A2F;
+  --color_primary: #379a46;
+  --color_primary_light: #389a2f;
   /* $color_primary_dark:  */
-  --color_secondary: #A1A1A1;
-  --color_accent: #1C1447;
+  --color_secondary: #a1a1a1;
+  --color_accent: #1c1447;
   /* Breakpoints */
   --break_one: 600px;
   --break_two: 1024px;
 }
 
 html {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: var(--color_dark);
 }
 
@@ -124,7 +125,7 @@ button.secondary {
   text-transform: lowercase;
 }
 
-input[type=email].secondary {
+input[type="email"].secondary {
   background-color: transparent;
   border: 1px solid var(--color_secondary);
   color: var(--color_secondary);

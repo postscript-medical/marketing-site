@@ -13,10 +13,7 @@
 
 <div class="contributors stacker--large">
   {#each Object.entries(contributors) as [heading, entries]}
-    <ContributorsSpecialty
-      {heading}
-      {entries}
-    />
+    <ContributorsSpecialty {heading} {entries} />
   {/each}
 </div>
 

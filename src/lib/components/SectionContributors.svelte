@@ -5,12 +5,16 @@
 </script>
 
 <section class="contributors stacker--large">
-  <ContributorsSpecialty
-    heading="Specialty Leads"
-    entries={contributors.gastroenterology}
-  />
+  <ContributorsSpecialty heading="Specialty Leads" entries={contributors.gastroenterology} />
 
-  <a class="cta--b" href="/contributors">
-    See all contributors
-  </a>
+  <a class="cta--b" href="/contributors"> See all contributors </a>
 </section>
+
+<style>
+  .contributors {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>

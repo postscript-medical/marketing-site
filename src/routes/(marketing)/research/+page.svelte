@@ -22,7 +22,7 @@
   <ResearchFindingsCard {...cardContent1} />
 
   <KeyFindingsGroup entries={researchPage1} />
-  
+
   <ResearchFindingsCard {...cardContent2} />
 
   <KeyFindingsGroup entries={researchPage2} />
