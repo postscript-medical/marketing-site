@@ -16,6 +16,8 @@
     illustrations, which can be annotated and individualised, to every patient they see.
   </p>
 
+  <p>You can write to them on <a href="mailto:admin@postscriptmedical.com">admin@postscriptmedical.com</a>.</p>
+
   <ul class="founders stacker--large">
     <li class="founder">
       <ContributorsAvatar
@@ -31,10 +33,7 @@
       </p>
 
       <p>
-        Graeme is also a Fellow on the NHS Clinical Entrepreneur Programme. The biggest
-        entrepreneurial workforce development programme of its kind, to support development and
-        innovative solutions to the challenges facing the NHS for the benefit of patients, staff and
-        the wider NHS.
+        Graeme is a Fellow on the NHS Clinical Entrepreneur Programme. This is the biggest entrepreneurial workforce development programme of its kind to support development solutions to the challenges facing the NHS for the benefit of patients, staff and the wider NHS.
       </p>
 
       <a href="https://nhscep.hivebrite.com/">
@@ -51,8 +50,12 @@
       <ContributorsAvatar
         avatar_url="https://res.cloudinary.com/postscript-medical/image/upload/v1622576447/marketing-website/rajan.jpg"
         name="Dr Rajan Patel"
-        profession="Rajan Patel is a consultant gastroenterologist and general physician. He trained in London and is currently working in New Zealand. He's got a passion for teaching and innovation."
+        profession="Raj is a consultant gastroenterologist in Christchurch, New Zealand. He did his undergraduate degree (MBChB (Hons)) at the University of Liverpool Medical School, UK. He went on to complete his gastroenterology training in London (including Kings College Hospital, Royal Free Hospital and The Royal London Hospital). Raj worked as a consultant in North London before moving to New Zealand in 2021."
       />
+
+      <p>
+        He has an interest in Inflammatory Bowel Disease, advanced luminal endoscopy and clinical research. Raj also has a passion for telehealth and innovation. He has presented and published in areas including inflammatory bowel disease, colonic polypectomy and bowel preparation.
+      </p>
     </li>
   </ul>
 </section>
@@ -88,6 +91,7 @@
   .founder {
     display: grid;
     gap: var(--size_400);
+    grid-auto-rows: min-content;
     max-width: 22rem;
   }
 
