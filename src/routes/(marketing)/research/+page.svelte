@@ -28,18 +28,4 @@
   <KeyFindingsGroup entries={researchPage2} />
 
   <ResearchFindingsCard {...cardContent3} />
-  <!-- {% set researchFindingsCardContent = keyFindings.cardContent1 %}
-  {% include "partials/research-findings-card.njk" %}
-
-  {% set groupContent = keyFindings.researchPage1 %}
-  {% include "partials/key-findings-group.njk" %}
-
-  {% set researchFindingsCardContent = keyFindings.cardContent2 %}
-  {% include "partials/research-findings-card.njk" %}
-
-  {% set groupContent = keyFindings.researchPage2 %}
-  {% include "partials/key-findings-group.njk" %}
-
-  {% set researchFindingsCardContent = keyFindings.cardContent3 %}
-  {% include "partials/research-findings-card.njk" %} -->
 </section>
