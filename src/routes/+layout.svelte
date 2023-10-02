@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Header from "$lib/components/Header.svelte";
-  import Footer from "$lib/components/Footer.svelte";
-
   import "$lib/css/globals.css";
   import "$lib/css/layouts.css";
+
+  import Header from "$lib/components/Header.svelte";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <Header />
