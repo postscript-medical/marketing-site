@@ -54,12 +54,6 @@ img {
   height: 100%;
 }
 
-/* Hack to fix Safari < 14.1 image stretching */
-@supports not (transform: translate(10px, 10px)) {
-  img {
-    height: 100%;
-  }
-}
 
 /* Inherit fonts for inputs and buttons */
 input,
