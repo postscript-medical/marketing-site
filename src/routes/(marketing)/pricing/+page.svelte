@@ -56,59 +56,63 @@
 />
 
 {#each plans as plan}
-  <h2>
-    {plan.name}
-  </h2>
-
-  <ul class="plain products">
-    {#each plan.products as product}
-      {@const price = product.price.currencies.find(
-        (currency) => currency.locale === locale
-      )}
-      <li>
-        <p>
-          <strong>
-            {product.name}
-          </strong>
-        </p>
-
-        <p>
-          <span class="price">£{price?.amount}</span><span class="billing-frequency">/per month</span><br />or £{price?.amount * 10}/per year
-        </p>
-
-        <p>
-          Includes:
-        </p>
-
-        <ul>
-          {#each product.features as feature}
-            <li>
-              {feature}
-            </li>
-          {/each}
-        </ul>
-      </li>
-    {/each}
-  </ul>
+  <div class="stacker--large">
+    <h2>
+      {plan.name}
+    </h2>
+  
+    <ul class="plain products">
+      {#each plan.products as product}
+        {@const price = product.price.currencies.find(
+          (currency) => currency.locale === locale
+        )}
+        <li>
+          <p style="font-size:1.2em">
+            <strong>
+              {product.name}
+            </strong>
+          </p>
+  
+          <p>
+            <span class="price">£{price?.amount}</span><span class="billing-frequency">/per month</span><br />or £{price && price?.amount * 10}/per year
+          </p>
+  
+          <p>
+            Includes:
+          </p>
+  
+          <ul class="features">
+            {#each product.features as feature}
+              <li>
+                {feature}
+              </li>
+            {/each}
+          </ul>
+        </li>
+      {/each}
+    </ul>
+  </div>
 {/each}
 
 <div class="box">
   <p>
-    <a class="cta" href="https://app.postscriptmedical.com/#/sign-up">Sign up for a plan.</a>
+    <a class="cta" href="https://app.postscriptmedical.com/#/sign-up">Sign up for a plan</a>
   </p>
 
   <p class="discount-note">
-    50% discount for limited time only. Discount will be applied at the final stage of payment process. 
+    50% discount for limited time only.<br/>Discount will be applied at the final stage of payment process. 
   </p>
 </div>
 
-<h2>
-  Team plans
-</h2>
-
-<p style="margin:auto; text-align:center;">
-  Please <a href="mailto:admin@postscriptmedical.com">contact us</a> to discuss.
-</p>
+<div class="box">
+  <h2>
+    Team plans
+  </h2>
+  
+  <p style="margin:auto; text-align:center;">
+    Please <a href="mailto:admin@postscriptmedical.com">contact us</a> to discuss.
+  </p>
+</div>
 
 <style>
   h2 {
@@ -142,6 +146,11 @@
     margin-bottom: 1rem;
   }
 
+  .features {
+    list-style: inside "- ";
+    padding-left: var(--size_100);
+  }
+
   .price {
     font-size: 2.36rem;
     font-weight: 600;
@@ -154,8 +163,15 @@
     font-size: 0.8em;
   }
 
+  .cta {
+    font-size: 1.5em;
+    padding: var(--size_400) var(--size_600)
+  }
+
   .discount-note {
     font-style: italic;
     font-size: 0.8rem;
+    line-height: 2.5;
+    text-align: center;
   }
 </style>

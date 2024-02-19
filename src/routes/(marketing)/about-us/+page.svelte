@@ -16,7 +16,7 @@
     illustrations, which can be annotated and individualised, to every patient they see.
   </p>
 
-  <p>You can write to them on <a href="mailto:admin@postscriptmedical.com">admin@postscriptmedical.com</a>.</p>
+  <p>You can write to them at <a href="mailto:admin@postscriptmedical.com">admin@postscriptmedical.com</a>.</p>
 
   <ul class="founders stacker--large">
     <li class="founder">
