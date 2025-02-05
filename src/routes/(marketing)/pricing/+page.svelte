@@ -7,25 +7,6 @@
       name: "Individual plans",
       products: [
         {
-          name: "Single specialty",
-          price: {
-            currencies: [
-              {
-                amount: 25,
-                locale: "gbp"
-              },
-              {
-                amount: 52,
-                locale: "nzd"
-              }
-            ]
-          },
-          features: [
-            "All illustrations for a single specialty",
-            "50% discount for the first 12 months"
-          ]
-        },
-        {
           name: "Whole catalogue",
           price: {
             currencies: [
@@ -41,7 +22,7 @@
           },
           features: [
             "All illustrations from all specialties",
-            "50% discount for the first 12 months"
+            "90% discound on the cost of the subscription with code: 90OFF"
           ]
         }
       ]
@@ -100,7 +81,7 @@
   </p>
 
   <p class="discount-note">
-    50% discount for limited time only.<br/>Discount will be applied at the final stage of payment process. 
+    Coupon discount for limited time only.
   </p>
 </div>
 
