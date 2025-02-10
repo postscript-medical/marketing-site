@@ -81,7 +81,7 @@
   </p>
 
   <p class="discount-note">
-    Coupon discount for limited time only.
+    50% discount for limited time only.<br/>Discount will be applied at the final stage of payment process.
   </p>
 </div>
 
