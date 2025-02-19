@@ -22,7 +22,7 @@
           },
           features: [
             "All illustrations from all specialties",
-            "90% discound on the cost of the subscription with code: 90OFF"
+            "90% discount on the cost of the subscription with code: 90OFF"
           ]
         }
       ]
