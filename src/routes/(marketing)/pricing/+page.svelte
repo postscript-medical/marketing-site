@@ -75,7 +75,7 @@
   </div>
 {/each}
 
-<div class="box">
+<!-- <div class="box">
   <p>
     <a class="cta" href="https://app.postscriptmedical.com/#/sign-up">Sign up for a plan</a>
   </p>
@@ -83,7 +83,7 @@
   <p class="discount-note">
     Coupon discount for limited time only.
   </p>
-</div>
+</div> -->
 
 <div class="box">
   <h2>
@@ -144,7 +144,7 @@
     font-size: 0.8em;
   }
 
-  .cta {
+  /* .cta {
     font-size: 1.5em;
     padding: var(--size_400) var(--size_600)
   }
@@ -154,5 +154,5 @@
     font-size: 0.8rem;
     line-height: 2.5;
     text-align: center;
-  }
+  } */
 </style>
