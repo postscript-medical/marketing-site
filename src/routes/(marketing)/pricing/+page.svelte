@@ -6,25 +6,25 @@
     {
       name: "Individual plans",
       products: [
-        {
-          name: "Whole catalogue",
-          price: {
-            currencies: [
-              {
-                amount: 30,
-                locale: "gbp"
-              },
-              {
-                amount: 62.5,
-                locale: "nzd"
-              }
-            ]
-          },
-          features: [
-            "All illustrations from all specialties",
-            "90% discount on the cost of the subscription with code: 90OFF"
-          ]
-        }
+        // {
+        //   name: "Whole catalogue",
+        //   price: {
+        //     currencies: [
+        //       {
+        //         amount: 30,
+        //         locale: "gbp"
+        //       },
+        //       {
+        //         amount: 62.5,
+        //         locale: "nzd"
+        //       }
+        //     ]
+        //   },
+        //   features: [
+        //     "All illustrations from all specialties",
+        //     "90% discount on the cost of the subscription with code: 90OFF"
+        //   ]
+        // }
       ]
     }
   ];
@@ -43,7 +43,7 @@
     </h2>
   
     <ul class="plain products">
-      {#each plan.products as product}
+      <!-- {#each plan.products as product}
         {@const price = product.price.currencies.find(
           (currency) => currency.locale === locale
         )}
@@ -70,20 +70,38 @@
             {/each}
           </ul>
         </li>
-      {/each}
+      {/each} -->
+
+        <li>
+          <p style="font-size:1.2em">
+            <strong>
+              Whole catalogue
+            </strong>
+          </p>
+  
+          <p>
+            <span class="price">Free</span>
+          </p>
+  
+          <p>
+            Includes:
+          </p>
+  
+          <ul class="features">
+            <li>
+              All illustrations from all specialties
+            </li>
+          </ul>
+        </li>
     </ul>
   </div>
 {/each}
 
-<!-- <div class="box">
+<div class="box">
   <p>
-    <a class="cta" href="https://app.postscriptmedical.com/#/sign-up">Sign up for a plan</a>
+    <a class="cta" href="https://app.postscriptmedical.com/sign-up">Sign up for a plan</a>
   </p>
-
-  <p class="discount-note">
-    Coupon discount for limited time only.
-  </p>
-</div> -->
+</div>
 
 <div class="box">
   <h2>
